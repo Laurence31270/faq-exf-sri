@@ -41,7 +41,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.faq_exf_sri }}
+          GH_TOKEN: ${{ secrets.faq_exf_sri }}
         run: |
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
           git config --global user.name "Anaël Delorme"
