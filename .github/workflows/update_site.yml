@@ -8,15 +8,16 @@ on:
 jobs:
   update-site:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+          cache: 'pip'  # Active le cache pour les dépendances Python
 
       - name: Install Python dependencies
         run: |
@@ -28,30 +29,29 @@ jobs:
           python .github/scripts/excel_to_json.py
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'  # Active le cache pour les dépendances Node.js
 
       - name: Install Node dependencies
-        run: npm install
+        run: npm ci  # Utilise `npm ci` pour une installation plus rapide et reproductible
 
       - name: Build website
         run: npm run build
 
-      - name: Set Git user identity
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "anael.delorme@agriculture.gouv.fr"
-
       - name: Deploy to GitHub Pages
         run: |
-          # Create a temporary branch to deploy
-          git checkout --orphan gh-pages
-          git reset --hard
-          # Move the contents of the dist folder to the root
-          cp -a dist/. .
-          # Add and commit the files to the gh-pages branch
-          git add .
-          git commit -m "Deploy updated site"
-          # Push to the gh-pages branch
-          git push origin gh-pages --force
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          npx gh-pages -d build
+
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "Deployment successful!"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Deployment failed!"
