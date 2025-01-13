@@ -45,7 +45,8 @@ jobs:
         run: |
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
           git config --global user.name "Anaël Delorme"
-          npx gh-pages -d dist
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d dist --repo https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
 
       - name: Notify on success
         if: success()
