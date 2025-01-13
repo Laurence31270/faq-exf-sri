@@ -1,6 +1,5 @@
 name: Update QA Website
 
-# Ajout des permissions nécessaires
 permissions:
   contents: write
   pages: write
@@ -18,9 +17,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,6 +31,10 @@ jobs:
       - name: Convert Excel to JSON
         run: |
           python .github/scripts/excel_to_json.py
+          echo "Contenu du dossier public :"
+          ls -la public/
+          echo "Contenu du fichier JSON :"
+          cat public/qa_data.json
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -46,7 +46,12 @@ jobs:
         run: npm ci
 
       - name: Build website
-        run: npm run build
+        run: |
+          npm run build
+          echo "Contenu du dossier dist :"
+          ls -la dist/
+          echo "Vérification du JSON dans dist :"
+          cat dist/qa_data.json
 
       - name: Deploy to GitHub Pages
         env:
@@ -56,13 +61,3 @@ jobs:
           git config --global user.name "Anaël Delorme"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -d dist --repo https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git --user "Anaël Delorme <anael.delorme@agriculture.gouv.fr>"
-
-      - name: Notify on success
-        if: success()
-        run: |
-          echo "Deployment successful!"
-
-      - name: Notify on failure
-        if: failure()
-        run: |
-          echo "Deployment failed!"
