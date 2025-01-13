@@ -43,9 +43,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.faq_exf_sri }}
         run: |
+          git config --global url.https://${{ secrets.faq_exf_sri }}@github.com/.insteadOf https://github.com/
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
           git config --global user.name "Anaël Delorme"
-          git config --global url.https://${{ secrets.faq_exf_sri }}@github.com/.insteadOf https://github.com/
           npx gh-pages -d dist
 
       - name: Notify on success
