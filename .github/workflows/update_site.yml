@@ -44,3 +44,4 @@ jobs:
         with:
           folder: dist 
           branch: gh-pages
+          token: ${{ secrets.faq_exf_sri }}
