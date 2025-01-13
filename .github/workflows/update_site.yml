@@ -38,6 +38,11 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Set Git user identity
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "anael.delorme@agriculture.gouv.fr"
+
       - name: Deploy to GitHub Pages
         run: |
           # Create a temporary branch to deploy
