@@ -1,0 +1,542 @@
+{
+  "Univers": [
+    {
+      "question": "Objectifs de l'enquête",
+      "answer": "Pour la récolte, disposer du volume total de bois commercialisé en France en recherchant l'exhaustivité et en évitant les double-comptes. \nPour les sciages, bois sous rails, merrains et produits finis, il s'agit de recueillir les données obligatoire pour l'Eurostat sur la Production Commercialisés par la France en recherchant l'exhaustivité et en évitant les double-comptes."
+    },
+    {
+      "question": "Définition Exploitant forestier entrant dans le champ de l'enquête",
+      "answer": "Il s'agit bien de \"tous les exploitants forestiers et tous les propriétaires forestiers qui récoltent du bois en France métropolitaine et le vendent abattu (…) ou approvisionnent leur propre entreprise\".\nActuellement, nous enquêtons les exploitants forestiers sur la base de leur code NAF 02.20Z, toutes les coopératives forestières, l'Office National des Forêts et une partie des groupements forestiers"
+    },
+    {
+      "question": "Conditions pour être dans le champ de l'enquête",
+      "answer": "1- ils sont propriétaires des coupes, soit parce qu’ils les ont achetées sur pied, soit parce qu’elles sont issues de leurs propriétés soit parce qu’ils ont été cédées gratuitement ;\n2- ils assurent l’abattage, la découpe (façonnage), le transport hors de la forêt (débardage), le tri et généralement la livraison du bois chez l’utilisateur. Ces prestations peuvent être réalisées directement par le propriétaire des bois, par ses salariés ou confiées à des sous-traitants (ces derniers sont appelés entrepreneurs de travaux forestiers au sens du 1° de l’article L.722-3 du Code Rural) ;\n3- ils vendent ou revendent le bois, directement ou par l’intermédiaire d’un courtier ou d’un négociant, ou utilisent le bois dans leur entreprise."
+    },
+    {
+      "question": "Hors Champ",
+      "answer": "Les exploitants forestiers qui n'achêtent pas le bois : ils réalisent seulement la prestation de coupe de bois au profit d'un acteur qui LUI doit répondre à l'enquête."
+    },
+    {
+      "question": "Exploitants forestiers",
+      "answer": "C'est une définition de catégorie professionnelle et donc est plus restreint que l'univers attendu pour l'enquête. Il s'agit biensûr des NAF 02.20Z mais aussi tous les acteurs répondants aux 3 conditions."
+    },
+    {
+      "question": "Exploitants scieurs",
+      "answer": "Ce cas particulier est fréquent et il faudrait plutôt dire scieur ayant une activité d'exploitant forestier (en vue de l'approvisionnement de son entreprise). Il répond donc aux 2 volets de l'enquête."
+    },
+    {
+      "question": "Coopératives forestières",
+      "answer": "Ce sont des entités ayant plusieurs activités dont une est de commercialiser du bois pour alimenter l'industrie. Elles peuvent :\n- acheter le bois sur pied, l'exploiter et le revendre comme un exploitant forestier \"classique\" => champ de l'enquête EXF\n- couper le bois, le vendre pour le compte du propriétaire et reverser l'argent au propriétaire : cas particulier où malqrè le fait que la coopérative n'achête pas le bois, elle répond à l'enquête EXF pour le compte du propriétaire. Il est plus simple de faire cela que de contacter tous les propriétaires pour qu'ils répondent à l'enquête => champ de l'enquête EXF\n- couper le bois, le mettre bord de route à disposition du propriétaire qui va le vendre. Elle intervient alors au titre de prestataire de service forestier => n'entre pas dans le champ de l'enquête EXF. En effet, ces volumes manquent à notre enquête sauf si ce sont des groupements forestiers interrogés. Sujet à éventuellement aborder dans le cadre du passage au Label."
+    },
+    {
+      "question": "Office National des Forêts",
+      "answer": "L'ONF vend du bois sur pied, qui n'entre pas dans le champ (car déclaré par les acheteurs) et vend du bois bord de route (appelé bois fasconné) => champ de l'enquête EXF"
+    },
+    {
+      "question": "Affouage (via ONF)",
+      "answer": "Certaines communes forestières vendent du bois sur pied à leurs administrés. Charge à eux de l'exploiter pour leur utilisation ou vente. Ces volumes échappent à notre enquête et sont importants (1 à 2 Mm3). Voir lors du passage au Label pour les intégrer dans l'enquête via l'ONF."
+    },
+    {
+      "question": "Groupements forestiers",
+      "answer": "Ce sont des propriétaires qui se sont groupés pour gérer et/ou commercialiser leurs bois. A ce titre, c'est la même gestion que l'ONF : soit vente sur pied (dans ce cas Hors Champ), soit vend bord de route après coupe => champ de l'enquête EXF. A ce jour, seul une partie des groupements forestiers sont enquêtés. Etude faite en 2020-2021 (Renseignements auprès du SSP/BSSAF)"
+    },
+    {
+      "question": "Autres propriétaires forestiers",
+      "answer": "Tout propriétaire forestier répondant aux 3 conditions devraient être enquêté. Le problème est de les trouver car rares sont ceux qui coupe et vendent bord de route ; l'immense majorité vend le bois sur pied à des exploitants.\nReste le cas des agriculteurs ayant déclaré lors du RA qu'il avaient une activité d'exploitant forestier. Nous essayons de les intégrer progressivement."
+    },
+    {
+      "question": "Volet \"Scieries\"",
+      "answer": "Toute entreprises produisant et/ou commercialisant les produits suivant est econcerné par le volet \"Scieries\" :\n- sciages bruts, rabotés, poncés ou aboutés d’une épaisseur de plus de 6 mm,\n- bois sous rails (imprégnés ou non)\n- déroulage/tranchage d’une épaisseur de plus de 6 mm,\n- merrains\n- lames pour parquets, pour terrasses, pour lambris, pour bardages\n- moulures, baguettes\n- panneaux pour parquets,\n- fibre, laine et farine de bois,\n- bois injectés ou imprégnés,\n- produits connexes de ces activités (écorces, sciures, copeaux, chutes, plaquettes et autres sous produits).\nL'essentiel de ses entreprises est sélectionné via leur code NAF : 16.10A, 16.10B, 16.22Z et 16.24Z (partie)\nDonc les scieries ne sont pas les seules à être enquêtées."
+    },
+    {
+      "question": "Scieries",
+      "answer": "Elles peuvent, en plus de la production de sciages, avoir toute ou partie des autres activités évoquées ci-dessus.\nElles peuvent aussi ne pas avoir les codes NAF évoqués car ayant aussi d'autres activités (par exemple  la fabrication de cercueil…)"
+    },
+    {
+      "question": "Mérandiers",
+      "answer": "Ce sont des entreprises spécialisées dans la fabrication de merrains avec dans de rares cas une activité de scierie."
+    },
+    {
+      "question": "Bois Sous Rails",
+      "answer": "Les entreprises qui en fabriquent sont généralement des scieries car le BSR est un sciage à part entière. Il est différencié des autres uniquement à cause du reporting spécifique de ce produit pour Eurostat."
+    },
+    {
+      "question": "Déroulage/tranchage",
+      "answer": "Cas particulier qui est anecdotique car la majorité des déroulage/tranchage fait moins de 6 mm (exemple : boite de camembert pour le déroulage)."
+    },
+    {
+      "question": "Autres produits",
+      "answer": "Il existe quelques entreprises qui ne font que ces produits mais attention, elles doivent déclarer leurs connexes."
+    },
+    {
+      "question": "Connexes",
+      "answer": "Toutes les entreprises transformant du bois produisent des connxes qui doivent être déclarés même s'ils ne sont pas vendu ou s'il sont stockés."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "Question d'un expert forestier :\nDe nombreux propriétaires privés m'ont confié la gestion de leur patrimoine forestier depuis plusieurs années. Certains, sont en Groupement Forestier et m'ont informé du courrier que vous leur avez envoyé et cité en objet.\nJe souhaiterai connaitre les critères retenus pour ces envois car tous mes clients en Groupement Forestier ne reçoivent pas systématiquement ce courrier.\nDe plus, à quoi correspond il au juste ? J'ai bien peur que ce courrier ne soit généralement pas adapté aux Groupements Forestiers mais plutôt aux exploitants forestiers et scieurs.\nJe vous remercie donc de m'éclairer dans la mesure du possible sur ce sujet.",
+      "answer": "C'est un expert forestier et non une entreprise \"classique\".\nCependant, il est à même de rentrer dans le champ de l'enquête : il faut dans ce cas, comme tout autre qui \"sort\" de l'ordinaire, rappeler simplement les conditions d'entrée dans le champ de l'enquête mais en les contextualisant aux experts forestiers.\nAvant de donner des éléments de réponse, je précise ce que peuvent réaliser les experts pour les GF :\n- proposer des coupes de bois\n- regrouper les coupes de différents propriétaires (dont des GF) afin de créer des lots\n- organiser une vente de bois\nEt c'est à ce moment qu'ils entrent dans le champ ou non de l'enquête selon qu'ils vendent le bois sur pied (Hors Champ) ou bord de route après avoir fait appel à un prestataire de service pour la coupe de bois (réponse à EXF attendue).\n\nDonc il faut expliquer cela à cet expert et lui dire aussi que sa réponse est faite en lieu et place d'un groupement forestier dont il est le gestionnaire.\nPar conséquent, par exemple, s'il gère 10 GF mais que la coupe vendu bord de route ne concerne que 3 GF, alors il doit ventiler les bois de cette coupe dans les 3 déclarations par GF. Enfin, si ces GF vendent en plus du bois sur pied, bien évidemment, celui-ci ne devra pas être déclaré dans EXF."
+    }
+  ],
+  "Codification": [
+    {
+      "question": "ACCEPT :",
+      "answer": "Ne pas confondre les point 2 et 3 : lorsqu'on a eu au moins un contact avec la personne puis plus rien, il ne faut pas le mettre en \"injoignable\" mais en \"refuse de répondre\" ."
+    },
+    {
+      "question": "MAJC :",
+      "answer": "Code 4 : Une entreprise \"Temporairement inactive\" est généralement un groupement forestier qui n'a pas effectué de coupe vendue bord de route l'année enquêtée. Si une groupement forestier n'a pas l'intention d'effectuer de coupe dans les 5 prochaines années, il conviendra de le déclarer à la chargée d'enquête EXF-SRI afin qu'elle le mette dans un tableau spécial. De ce fait, cette unité ne sera pas enquêté les 4 prochaines années et donc sortira de l'échantillon. Il convient donc de poser la question pour toute les unités déclarant ne pas avoir fait de coupe.\nCode 6 : Une entreprise classée en \"Hors champ\" est obligatoirement une entreprise qui à l'avenir ne répondra jamais aux critères de définition de l'enquête. Si elle peut y répondre dans les 5 années à venir, elle doit alors être mise en \"Temporairement inactive\"."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "Une enquêtrice me demande quel code mettre pour une entreprise qui a cessée en juin 2023 et qu'un repreneur a poursuite en juillet 2023.\nSi on met le code 7, toutes les données qui vont de janvier 2023 à juin 2023 ne seront pas prises en compte.",
+      "answer": "On n'avait pas pensé à ce type de cas. Il faudra qu'on revoit pour l'année prochaine les modalités de la variable MAJC.\nTu peux codifier cette unité en code 2- active en 2023 avec cessation réalisée en 2024 en mettant en commentaire que cette unité à été reprise en juillet 2023 par la société xxx."
+    },
+    {
+      "question": "Quand tu dis qu'en fin de campagne, pour chaque questionnaire collecté, le code VALIDSRISE prendra la modalité 5-NPAI ou 7- CAPI validé, ceux qui ont, par exemple le code 6-À expertiser par le SSP tout en ayant fait le choix \"questionnaire incomplet\" dans ce même onglet, finiront par soit 5 ou 7 ou pourront-ils conserver cette validation ?.",
+      "answer": "En fin de campagne, pour chaque questionnaires collecté le code VALIDSRISE prendra la modalité 5-NPAI, 6-A expertiser par le SSP ou 7-CAPI validé."
+    }
+  ],
+  "Recolte": [
+    {
+      "question": "Onglet EXFRecolte : généralités",
+      "answer": "La récolte de bois étant liée aux coupes achetées, il peut y avoir des variations d'une année sur l'autre importante concernant les essences exploitées et les départements de récolte. Cependant, l'évolution du volume total est à surveiller car un exploitant a besoin d'un certain volume régulier pour faire tourner son entreprise. Par contre, cela n'est pas le cas des propriétaires, notamment les groupements forestiers. En effet, il récolte les coupes prévues dans leur plan de gestion et donc peuvent vendre peu (ou rien) une année et beaucoup l'année suivante)."
+    },
+    {
+      "question": "Chêne (100 et 110)",
+      "answer": "Les entreprises commercialisant des merrains qui ont une activité d'exploitant forestier peuvent avoir la totalité de leur récolte dans le code 100 (meilleure qualité) car c'est la qualité de bois nécessaire à leur production."
+    },
+    {
+      "question": "Feuillus précieux (176)",
+      "answer": "Voici la liste exhaustive des feuillus de cette catégorie : noyer, frêne, érable, merisier (i.e. cerisier sauvage), alisier, cormier, pommier, poirier, tilleul, aulne glutineux, robinier faux accacia."
+    },
+    {
+      "question": "Autres feuillus (270)",
+      "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées. Voici les essences entrant dans cette catégorie : charme, bouleau, orme, tremble, saule, platane, olivier, eucalyptus.\nPoint de vigilence : si une entreprise renseigne totalement sa récolte dans cette catégorie \"Autres\", il y a de fortes chances qu'il s'agisse d'une volonté de ne pas détailler les essences et donc de considérer cette catégorie comme un \"fourre tout\". Il convient donc de les \"obliger\" à donner le nom des essences de leur déclaration. Si ils déclarent qu'il ne peuvent pas différencier les essences, leur demander alors une estimation de l'essence majoritaire et de son pourcentage approximatif : cela sera renseigné dans la bonne catégorie et le reste dans le 270.\nNotons que normalement cette catégorie doit être très faible, voire nulle."
+    },
+    {
+      "question": "Sapin (301)",
+      "answer": "Attention, jusqu'en 2020, le sapin faisait partie du code 300 Sapin-épicéa. Il convient donc de vérifier que l'entreprise qui déclare du sapin et pas d'épicéa n'ait pas rempli son questionnaire \"par réflexe\" sur la première ligne des conifères comme par le passé (lui poser la question uniquement si le volume de sapin est supérieur à 10000 m3)"
+    },
+    {
+      "question": "Epicéa (302)",
+      "answer": "L'épidémie de scolyte étant toujours présente en France, il faut vérifier lorsqu'une entreprise déclare un gros volume d'épicéa (> 10000 m3), elle n'a pas oublié de déclarer (une estimation suffit) un volume de \"récolte de bois sanitaire\" dans l'onglet Recolte9K99 (lui poser la question)."
+    },
+    {
+      "question": "Autres conifères (370) et localisation majoritaire des essences ci-dessous :",
+      "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées. Les essences entrant dans cette catégorie sont listées lignes à ci-dessous.\nPoint de vigilence : si une entreprise renseigne totalement sa récolte dans cette catégorie \"Autres\", il y a de fortes chances qu'il s'agisse d'une volonté de ne pas détailler les essences et donc de considérer cette catégorie comme un \"fourre tout\". Il convient donc de les \"obliger\" à donner le nom des essences de leur déclaration. Si ils déclarent qu'il ne peuvent pas différencier les essences, leur demander alors une estimation de l'essence majoritaire et de son pourcentage approximatif : cela sera renseigné dans la bonne catégorie et le reste dans le 270.\nIl convient de voir au préalable le département de récolte et de regarder s'il est situé dans les régions de la liste ci-dessous :"
+    },
+    {
+      "question": "Pin d'Alep",
+      "answer": "Présent naturellement en France. On en trouve majoritairement en PACA, aussi en Languedoc-Roussillon et un peu en Rhones-Alpes (partie sud, Drôme, Ardèche)"
+    },
+    {
+      "question": "Pin Noir (d'Autriche…)",
+      "answer": "Issus de plantations dont les plus anciennes remontent fin du XIXe siècle sur d'anciennes pâtures. Ils ont été plantés sur des sols marno-calcaires pour éviter l'érosion et les coulèes de boue. Ils sont majoritairement dans des forêts gérées par l'ONF, essentiellement forêts Restauration Terrain Montagne (RTM). On en trouve majoritairement en PACA et Rhône-Alpes, mais aussi en Languedoc-Roussillon, Bourgogne, Champagne-Ardenne, Lorraine. Il est présent un peu dans toutes les régions."
+    },
+    {
+      "question": "Pin Laricio (de Corse, de Calabre…)",
+      "answer": "Issus de plantations sur le continent. Ils sont majoritairement sur des sols calcaires et très secs. On en trouve majoritairement en Corse (endémique) et région Centre, mais aussi en Languedoc-Roussillon,  Pays de la Loire, Aquitaine et Rhône-Alpes. Il est présent un peu dans toutes les régions."
+    },
+    {
+      "question": "Pin à crochets",
+      "answer": "On en trouve majoritairement en PACA en haute altitude."
+    },
+    {
+      "question": "Cèdre de l'Atlas, du Liban",
+      "answer": "On en trouve majoritairement en PACA, LR et RA, aussi anecdotiquement dans les autres régions (Ils sont majoritairement sur des sols calcaires et très secs)."
+    },
+    {
+      "question": "Epicéa de Sitka",
+      "answer": "On en trouve majoritairement en Bretagne, aussi en Limousin (issus de plantations)"
+    },
+    {
+      "question": "Autres pins (pignon, weymouth, cembro…)",
+      "answer": "Ils sont présents anecdotiquement sur le terrtoire métropolitain (généralement issus de plantations)."
+    },
+    {
+      "question": "Autres sapins (Nordmann, méditerranéen…)",
+      "answer": "Ils sont présents anecdotiquement sur le terrtoire métropolitain (généralement issus de plantations)."
+    },
+    {
+      "question": "Autres bois d'industrie feuillus (code 645)",
+      "answer": "Cette catégorie correspond généralement à des petits troncs d'arbres :\n- fendus pour la fabrication de piquets\n- tels quels apointés pour faire aussi des piquets\nElle peut aussi concerner des bois destinés à être broyés en plaquettes ou des plaquettes réalisées en forêt DESTINEES au paillage ou autres utilisations (hors énergie, cf code 816)"
+    },
+    {
+      "question": "Autres bois d'industrie conifères (code 660)",
+      "answer": "Cette catégorie correspond généralement à des troncs d'arbres :\n- fendus pour la fabrication de piquets\n- tels quels pour faire des poteaux (téléphone, électricité…)\n- qui seront utilisés pour fabriquer des barrières de sécurité\nElle peut aussi concerner des bois destinés à être broyés en plaquettes ou des plaquettes réalisées en forêt DESTINEES au paillage ou autres utilisations (hors énergie, cf code 816)"
+    },
+    {
+      "question": "Bois énergie : définitions",
+      "answer": "La récolte de bois destinés à l'énergie nécessite des explications des différentes catégories (ci-dessous) :"
+    },
+    {
+      "question": "Bois ronds en grande longueur et bois carbonisation (code 813)",
+      "answer": "Cette catégorie correspond à des troncs d'arbres :\n- de plus de 2 m de longueur et plus qui seront généralement destinés à être broyés en plaquettes pour alimenter des chaufferie bois\n- quelque soit leur longueur, les troncs destinés à être carbonisés, c'est à dire à être transformés en charbon de bois."
+    },
+    {
+      "question": "Bois rondins, bûches et souches (code 814)",
+      "answer": "Cette catégorie correspond à des :\n-  troncs d'arbres coupés généralement en rondins de 2m de longueur pour des facilités de transport et/ou d'utilisation.\n- bûches, donc troncs fendus en ou hors forêt destinés aux cheminées et poële à bois\n- souches issues de parcelles forestières lors des opérations de dessouchage préalable à la replantation (généralement les arbres plantés dans du sable comme la forêt des Landes)."
+    },
+    {
+      "question": "Plaquettes forestières",
+      "answer": "Ce sont UNIQUEMENT des troncs qui sont broyés en forêt et non pas destinés à être transformés hors forêt en plaquettes forestières."
+    },
+    {
+      "question": "Onglet Recolte9K99",
+      "answer": "La récolte de bois peut être due à des facteurs accidentels (tempête, incendies, neiges lourdes...) ou sanitaires (attaques d'insectes, maladies, sécheresse...). Il peut donc y avoir des variations d'une année sur l'autre importante. Cependant, l'évolution de ces volumes est à surveiller notamment dans le cas des récoltes sanitaires dues aux attaques de scolytes sur épicéas essentiellement mais aussi sur sapin. Concernant les recoltes sanitaires, les autres essences peuvent être touchées dans une moindre mesure par d'autres insectes (spirale, dendroctone, bupreste...) et des bactérie comme la chalarose du Frêne..."
+    },
+    {
+      "question": "Bois \"scié, transformés ou utilisé pour produire de l'énergie\"",
+      "answer": "Il existe 2 cas distincts : les entreprises de transformation du bois comme les scieries, méranderies et les exploitants forestiers. Les volumes utilisés doivent être déclarés et donc par défaut, ceux qui ne le sont pas sont obligatoirement considérés comme vendu ou cédés gratuitement.\nPensez à vérifier si les entreprises avait déclaré des volumes l'année précédente car il y a de bonnes chances que cela soit un oubli si l'année suivante ils n'ont rien mis."
+    },
+    {
+      "question": "Cas particulier des exploitants forestiers n'ayant aucune activité de transformation",
+      "answer": "Ces exploitants peuvent éventuellement utiliser une partie de leur récolte pour produire de l'énergie sur leur site. Dans ce cas, cela concerne uniquement la catégorie du bois énergie. Par conséquent, un exploitant \"pur\" ne peut pas déclarer utiliser des \"grumes\" destinées au sciages."
+    },
+    {
+      "question": "Onglet DestRecolte",
+      "answer": "Il s'agit de savoir si le bois récolté provient de forêts ou d'autres zones comme les parcs, arbres d'alignement (bord de route nationale, départementale…), particuliers…"
+    },
+    {
+      "question": "La récolte du bois d’œuvre implique une récolte simultanée de bois de moindre qualité, sauf que je n'ai rien en bois de trituration ni en bois énergie de déclarer.\nÀ quoi cela peut-il correspondre alors ?",
+      "answer": "Concernant le fait que la récolte du bois d’œuvre implique une récolte simultanée de bois de moindre qualité, c'est une question qui n'est pas facile à trancher.\nEn effet, généralement pour les résineux, les branches sont laissées sur place en forêt et non utilisées.\nPour les feuillus et à fortiori le chêne (qui a des grosses branches), les rémanents de coupe (tout ce qui n'est pas le tronc ou grume selon son appellation) sont soit :\n- laissés sur place donc non valorisés (rare)\n- laissés sur place par l'exploitant mais valorisés par le propriétaire du foncier donc non commercialisé\n- laissés sur place par l'exploitant (vendus ou non) mais valorisés par une entreprise \"spécialisée\" dans ce type de bois (donc commercialisé) pour vendre des bûches de bois énergie ou bien pour les broyer afin de faire des plaquettes forestières\n- récupérés/valorisés par l'exploitant et donc déclarés par celui-ci en bois d'industrie ou bois énergie (BI/BE).\nOr dans le cadre de l'enquête internationale, nous sommes \"en théorie\" obligé de déclarer tout bois qui sort de la forêt (branches jusqu'au diamètre de 7,5 cm, donc pas les feuilles) ainsi que les souches, lorsqu'il y a dessouchage (essentiellement pour le pin maritime dans le massif des Landes).\nPar conséquent, les volumes de l'enquête EXF sont par défaut (et non par excès).\nMalheureusement l'absence de BI/BE pour des feuillus est un \"manque\" de volume par rapport à notre définition.\nOn essaie au mieux de le récupérer mais comme il n'est souvent pas vendu, l'entreprise n'en a aucune idée."
+    },
+    {
+      "question": "Suite au passage de SPIN-Epicea à Sapin ou Epicéa, aurais-tu une idée simple pour estimer les volumes de sapins et d'épicéas.\nNous connaissons le volume total Sapins + épicéas de 2018. Comment répartir au mieux cette somme en 2019 entre Sapins et épicéas ?\nCela dépend des départements ?\nLesquels ?",
+      "answer": "A la lumière des données de l'Inventaire Forestier National et avec une volonté de simplification (mais tu peux encore plus simplifier...), voici ma proposition par région (et quelques départements atypiques) :"
+    },
+    {
+      "question": "Que fait-on si l'entreprise ne peut/veut pas déclarer de ventilation par département après un contact téléphonique ?",
+      "answer": "Ne rien remplir : le SSP se chargera de ventiler par département par proratisation de la dernière réponse disponible.\nEn cas de faible production ou d'absence de données antérieures, la récolte sera déclarée dans le département du siège de l'entreprise."
+    },
+    {
+      "question": "Que fait-on si l'entreprise est un exploitant-scieur mais n'a pas déclarés de volumes \"utilisés par l'entreprise\" ?",
+      "answer": "Il faut obligatoirement la rappeler et lui demander explicitement : \"Est-ce que la totalité du bois que vous avez récolté a été vendu à des tiers ?\". Si la réponse est non, alors leur demander la quantité qu'ils ont utilisés pour leur production de sciages ou autres production."
+    },
+    {
+      "question": "déclaré 10 m3r de poteaux feuillus. Quel est le mot important : poteaux ou feuillus ?\nCar la mention \"dont poteaux\" est sur la ligne des conifères...",
+      "answer": "La mention dont poteaux pour les conifères vient du fait qu'il y a quelques années nous individualisions les poteaux.\nConcernant les feuillus, ce sont plutôt des piquets mais cela peut aussi être des poteaux"
+    },
+    {
+      "question": "Comment gère-t'on les entreprises qui exploitent uniquemment les houppiers laissés par un exploitant forestier ?",
+      "answer": "Il existe 2 cas de figure :\n- l'entreprise qui est propriétaire de la coupe laisse sur place les houppiers qui vont être utilisés par une tierce entreprise qui n'est pas enquêtée. Dans ce cas, l'entreprise propriétaire de la coupe doit déclarer une esimation des volumes de houppier en bois énergie dans \"Plaquettes forestières\" car c'est sûrement l'usage qui va en être fait. Cependant, cette demande est importante uniquemement si les volumes de hoppier est significatif (> 100 t)\n- l'entreprise enquêtée est celle qui récupère uniquement les houppiers (pas propriétaire de la coupe). Dans ce cas, elle est propriétaire des houppiers qui lui ont été donné (ou vendus), donc elle doit déclarer les volumes (sans notion de seuil) dans \"Plaquettes forestières\"."
+    },
+    {
+      "question": "J'ai un doute concernant la codification et la conversion de la charbonnette (destination pizzerias).",
+      "answer": "la charbonnette est assimilée au bois bûche donc code 814."
+    },
+    {
+      "question": "C'est un dérouleur (sciage moins de 6 mm) qui est également exploitant forestier. Il est donc concerné par le questionnaire EXF mais pas le questionnaire SRI.\nDans l'onglet \"Récolte utilisée dans votre entreprise; produits accidentels/sanitaires\", doit il répondre \"oui\" à la question \"Le bois récolté (tout ou partie) a t'il été scié ou transformé ou utilisé pour produire de l'énergie dans votre entreprise ? \"; sachant que cela déclenche un contrôle majeur ?\nPar ailleurs, comme il s'agit de sciage de moins de 6 mm, il n'a pas rempli les parties \"Sciages par établissement\" et \"Sciages : volumes et facturations\" mais par contre, il a rempli l'onglet \"produits connexes\" et \"Grumes : stocks et approvisionnement\". Me confirmez vous que dans son cas ces deux onglets ne sont pas à remplir ?",
+      "answer": "ces onglets ne sont pas à remplir du moment où la totalité de sa production (déroulage) est hors champ.\n\nLe fait de remplir \"oui\" à la question \"Le bois récolté (tout ou partie) a t'il été scié ou transformé ou utilisé pour produire de l'énergie dans votre entreprise ? \" est important et il faut en effet le conserver (avec donc les volumes concernés).\nEn effet, nous avons besoin de cette information pour l'enquête \"Prix des grumes\".\n\nPar contre, il n'est pas attendu de partie en SRI, donc cela déclenche un contrôle majeur que vous pourrez forcer."
+    },
+    {
+      "question": "Un exploitant forestier a indiqué les volumes de pin maritime en grumes et billons en stère, existe t'il un coefficient de conversion de stère à m3 sur écorce pour les PM en grumes",
+      "answer": "en effet dans nos tableaux de conversion, ce cas de figure n'existe pas si ce sont des grumes destinées au sciage : est-ce le cas ?\nDans le cas de figure où ces pins maritimes sont destinés à la trituration ou autre bois d'industrie, nous avons le coefficient dans le tableau : 0,85 m3 par stère de rondins en 2m\nSi ce sont des grumes de sciages alors c'est mieux de demander le tonnage (il doit l'avoir sûrement car la vente et surtout le transport se font généralement en tonnes).\nDans le pire des cas, on prend le même coef que pour trituration, à savoir 0,85 m3 par stère."
+    },
+    {
+      "question": "La fabrication des piquets est elle  considérée comme une activité de sciage ou pas?\nNous avons le cas d'un exploitant forestier qui a abattu en 2020, 100 M3 de grumes qu'il a transformé en piquets. Doit on remplir la partie SRI (comme pour les poteaux) ?",
+      "answer": "on ne remplit pas SRI pour des piquets."
+    },
+    {
+      "question": "Un exploitant forestier abat des châtaigniers exprimé en tonnes,  et  qu'il transforme en piquets.\nQuel coefficient de conversion doit on retenir :\n- Coef : X 1  ( =  tonne brute en m3rond pour autres feuillus dans le tableau de conversion Grumes) car  il s'agit bien là de grumes récoltées\n- Ou bien se référer au tableau de conversion \"Autres bois d'industrie\" et choisir le coef 1.40 pour passer de tonne brute en m3rond au titre des  bois d'industrie divers feuillus  ?",
+      "answer": "dans ce cas, il s'agit de \"Autres bois d'industrie\" dans le questionnaire et que l'unité demandée est le m3r.\nLa donnée fournie par l'entreprise est des tonnes de Chataignier pour faire des piquets, donc ce sont forcément des bois de faible diamètre.\nC'est pour cela qu'il faut utiliser le coef de 1,40 correspondant aux \"Autres bois d'industrie feuillus\"."
+    },
+    {
+      "question": "Un exploitant forestier vend une quarantaine de stères de résineux et de peupliers à un producteur de sapins de Noël qui les détaille en pieds de sapin. Dans quelle catégorie les saisit on?",
+      "answer": "il faut classer ces volumes dans la catégorie \"Autres bois d'industrie\", Conifères."
+    },
+    {
+      "question": "Un exploitant forestier m'a demandé si nous avions une formule pour calculer le volume de grume par camion.\nIl utilise le calcul suivant : longueur * largeur * hauteur * 0.7\nA-t-on une formule pour lui faciliter la tâche.",
+      "answer": "ans le cas d'un volume de grumes de longueur minimale de 2 m, nous pouvons en effet valider la formule que cet exploitant utilise avec un coefficient que varie selon la nature du bois transporté :\n- volume en m3r sur écorce pour les résineux : longueur * largeur * hauteur * 0,7\n- volume en m3r sous écorce pour les résineux : longueur * largeur * hauteur * 0,65 (puis convertir sur écorce avec coef selon les essences dans tableau en rappel en pj)\n- volume en m3r sur écorce pour les feuillus : longueur * largeur * hauteur * 0,65\nCes résultats sont en m3 et sont à conserver tels quels pour les grumes destinées au sciage.\nAttention, si ces bois sont destinés à la trituration ou à l'énergie, il faudra alors les convertir en tonne"
+    },
+    {
+      "question": "Comment renseigner une scierie qui propose seulement du bois de chauffage. Est-elle dans le champ activité de sciage.\nCette entreprise récolte 50m3 de bois en forêt et en achète 300m3 pour le scier et le vendre en bois de chauffage.",
+      "answer": "cette entreprise réalise du fendage (et non du sciage) pour vendre son bois en bois de chauffage.\nPar conséquent, elle n'est pas dans le champ SRI.\n\nElle doit uniquement répondre au volet EXF, donc 50 m3 ; le reste étant une activité de vente de bois de chauffage, en dehors de notre champ."
+    },
+    {
+      "question": "Si l'exploitant forestier vend par ex 200 tonnes de  bois ronds de plus de 2m à une entreprise qui les transporte sur son site et les transforme ensuite en plaquettes forestières , merci de me confirmer que l'enquêteur doit saisir ces 200 t en ligne 813 ?\nEt si l'entreprise qui achète ces 200 tonnes de bois les transforme en plaquettes broyées au bord de route, sur quelle ligne doit on saisir ces 200 t : ligne 813 ou bien 816?\nEn page 29 des instructions, il est noté que que ces plaquettes forestières sont des plaquettes broyées en forêt sur coupe ou bord de route.. : par qui? l'exploitant forestier obligatoirement, ou non ?",
+      "answer": "Voici les 2 cas de figures :\n\n    cas 1 : si les plaquettes sont fabriqués sur le site de l'entreprise, alors cela dépend de la destination :\n        si c'est pour du bois énergie, c'est bien 813\n        si c'est pour de la trituration, c'est selon l'essence : 520, 530, 550 ou 554\n    cas 2 : si les plaquettes sont fabriquées en forêt ou bord de route ou sur une place de stockage alors\n        c'est du 816 a déclarer par l'exploitant qui a réaliser la coupe ET le broyage\n        c'est du 813, 520, 530, 550 ou 554 si l'exploitant a vendu le bois rond et que c'est une autre entreprise qui réalise le broyage. Notons que cela peut être une autre entreprise qui réalise le broyage en tant que prestataire de service : dans ce cas, l'exploitant étant toujours propriétaire des plaquettes, alors c'est du 816."
+    },
+    {
+      "question": "L'entreprise SARL RICHARD JOEL fabrique des bardeaux en châtaignier fendus à la main, qui sont ensuite délignés et légèrement rabotés sur le haut pour faciliter la pose.\nCette entreprise exploite aussi.\nComment doit-on classer ces bardeaux dans l'enquête.",
+      "answer": "Ces bardeaux sont à renseigner dans le questionnaire EXF au niveau du code 645 Autres bois d'industrie feuillus."
+    },
+    {
+      "question": "Un exploitant récupère des taillis le long des routes pour les sociétés SAPN, EDF et aussi quelques particuliers.\nUne fois ces taillis récupérés à titre gratuit, ils les transforment pour faire des plaquettes.\nPourriez-vous me confirmer si le dossier 017620 est hors champs ou pas?\nSinon, où faut il remplir pour indiquer ces quantités de taillis?",
+      "answer": "si l'entreprise les coupe elle-même alors elle doit en effet les déclarer dans plaquettes forestières code 816"
+    }
+  ],
+  "Sciages_Approv": [
+    {
+      "question": "Onglet SriSciage : généralités",
+      "answer": "La production de sciages correspond à la SOMME de 3 catégories distinctes précisées dans les 3 lignes suivantes. Il peut y avoir des variations d'une année sur l'autre mais elle est généralement faible car une scierie doit fonctionner au maximum de sa capacité de production afin de dégager des bénéfices. Cette déclaration se fait par établissement. Si l'entreprise réalise uniquement des sciages à façon (sciage réalisé sur des bois dont ils ne sont pas propriétaires), elle est alors prestataire de service. Dans ce cas, elle rempli uniquement la colonne 6 dans l'onglet SriProduit."
+    },
+    {
+      "question": "Sciages réalisés par l'entreprise et vendus",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par établissement destinés à être vendus par l'entreprise. Elle remplira donc ces volumes dans l'onglet SriProduit en colonne 1 (et 2 pour leur valeur)."
+    },
+    {
+      "question": "Sciages réalisés par une autre entreprise et vendus",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par d'autres établissements destinés à être vendus par l'entreprise. Elle remplira donc ces volumes dans l'onglet SriProduit en colonne 3, réalisés en sous traitance (et 4 pour leur valeur)."
+    },
+    {
+      "question": "Sciages réalisés par l'entreprise et destinés à être utilisés par l'entreprise",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par établissement destinés à être transformés par l'entreprise ou par une entreprise du groupe. Elle remplira donc ces volumes dans l'onglet SriProduit en colonne 5."
+    },
+    {
+      "question": "Cas particulier des exploitants scieurs",
+      "answer": "Attention, les volumes des essences déclarées dans EXF comme utilisée par l'entreprise (onglet RECOLTE9k99) doivent obligatoirement se retrouver dans les essences sciées. Exemple : une entreprise exploitant des sapins déclarés comme utilisé par l'entreprise doit dans sa déclaration de sciage avoir des volumes de sapins sciés : ce contrôle de cohérence n'est pas automatisé. Vérifier notamment pour les volumes importants."
+    },
+    {
+      "question": "Cas particulier des scieurs commercialisant aussi d'autres produits",
+      "answer": "Attention, seuls les sciages vendus doivent être déclarés. Les sciages revêtent un grand nombre d'appellation. Sont considérés comme des sciages bruts ou rabotés, poncés (non exhaustif) : bastaing, madrier, poutre, chevron, solivette, tasseau, planche, volige, latte et contre-latte, liteau et contre-liteau, bandeau, fermette..."
+    },
+    {
+      "question": "Définition des \"plots\"",
+      "answer": "Un plot est un sciage d'une grume logitudinalement qui conserve donc une zone brute écorcée ou non.\nIl est composés de dosses et quartiers (mot de vocabulaire importants si une scierie vous les donne)."
+    },
+    {
+      "question": "Définition des \"avivés\"",
+      "answer": "Un avivé est une pièce de bois scié (surface brute) de section rectangulaire avec arêtes vives.\nIl peut être obtenu par délignage d'un plateau (plot) ou directement à partir d'une grume selon le type de scierie.\nC'est ce que l'on appelle vulgairement une planche, quelle que soit ses dimensions.\nC'est donc un parallépipède rectangle (4 angles droits)."
+    },
+    {
+      "question": "Autres feuillus (2330)",
+      "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées.\nPoint de vigilence : si une entreprise renseigne totalement sa production dans cette catégorie \"Autres\", il y a de fortes chances qu'il s'agisse d'une volonté de ne pas détailler les essences et donc de considérer cette catégorie comme un \"fourre tout\". Il convient donc de les \"obliger\" à donner le nom des essences de leur déclaration. Si ils déclarent qu'il ne peuvent pas différencier les essences, leur demander alors une estimation de l'essence majoritaire et de son pourcentage approximatif : cela sera renseigné dans la bonne catégorie et le reste dans le 2330."
+    },
+    {
+      "question": "Pin sylvestre (n'existe plus)",
+      "answer": "Attention, depuis 2022, le pin sylvestre n'est plus individualisé dans les sciages. Cette essence se retrouve donc dans la catégorie \"Autres pins\" (3505 et 3506)."
+    },
+    {
+      "question": "Autres pins (3505 et 3506)",
+      "answer": "Attention, depuis 2022, tous les pins sont à remplir dans cette catégorie. Avant, les pins noir, d'Alep, Laricio étaient déclarés dans \"Autres conifères\"."
+    },
+    {
+      "question": "Autres conifères (3545)",
+      "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées. Depuis 2022, cette catégorie n'inclue plus les pins donc cette catégorie doit être inférieure que par le passé.\nPoint de vigilence : si une entreprise renseigne totalement sa récolte dans cette catégorie \"Autres\", il y a de fortes chances qu'il s'agisse d'une volonté de ne pas détailler les essences et donc de considérer cette catégorie comme un \"fourre tout\". Il convient donc de les \"obliger\" à donner le nom des essences de leur déclaration. Si ils déclarent qu'il ne peuvent pas différencier les essences, leur demander alors une estimation de l'essence majoritaire et de son pourcentage approximatif : cela sera renseigné dans la bonne catégorie et le reste dans le 3545."
+    },
+    {
+      "question": "Onglet SriApprovStock",
+      "answer": "Les entreprises déclarent leur approvisionnement afin que nous puissions avoir des informations sur le volume de grume utilisé. Notons que dans CAPIBARA la saisie des volumes de la recolte des exploitants-scieurs autoconsommée est renseignées automatiquement à partir de l'onglet \"Recolte9K99\" de EXF. C'est le seul contrôle de cohérence entre EXF et SRI.\nLes stocks permettent de calculer le rendement matière de la scierie au travers de la formule : Production / (approvisionnement + variation de stock)."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "Le SERFOB m'interroge sur la disponibilité de données d'approvisionnement géographique en grumes des scieries, cette donnée est demandé dans le questionnaire \nMais il semble que dans les cubes ADEL, cette information ne soit pas reprise dans un cube SRI, y compris un cube statisticien.\nhttps://agreste.agriculture.gouv.fr/agreste-web/disaron/SCINR06/detail/\nPouvez-vous me confirmer ce point ?",
+      "answer": "je vous confirme que cette donnée selon la provenance géographique des bois ne fait en effet l'objet d'aucune publication, ni papier, ni dans un cube.\nLe cube SCINR06 donne les volumes acheté ou exploités par région siège de la scierie.\nIl faut la traiter au niveau des données individuelles présentes dans Cerise dans le fichier APPROV_STOCK.csv (en pj pour 2019).\nPar contre, il faut croiser ce tableau avec un autre pour avoir les données géographiques du siège de la scierie.\nCependant, ces données doivent être analysées avec attention (d'où la non publication) car :\n- elles ne sont pas exhaustives car non obligatoire : si l'entreprise ne le remplit pas, elle a juste un remarque mais peut quand même valider son questionnaire\n- elles sont déclarées au niveau du siège pour la somme de tous les établissement, or dans une quinzaine de cas, des entreprises ont des établissements non localisés dans la même région que le siège d'où dans ces cas, l'impossibilité d'affecter géographiquement ces données\n- pour les % (code 116 à 119), on sait que leur approvisionnement vient d'exploitant forestier d'un \"autre département\" ou d'une \"autre région\" du siège de l'exploitant en question qui leur a vendu le bois. Or cela ne donne aucune information sur la provenance exacte des bois => en effet, un exploitant peut avoir son siège dans un département mais exploiter tout ou partie de son bois dans un autre.\nDonc la seule information très précise concerne les scieries qui sont aussi des exploitants forestiers car elles remplissent le questionnaire EXF (code 111 ci dessous) et donc nous avons la provenance exacte avec le département où à eu lieu la récolte et les volumes associés."
+    },
+    {
+      "question": "C'est une entreprise qui fabrique des palettes (sciage de la grume par eux). \nDe plus, concernant les sciages, ils sont mentionnés comme vendus alors qu'ils devraient être indiqués dans \"quantité utilisé par votre entreprise\" étant donné qu'ils les transforment en palettes.",
+      "answer": "A la lecture du questionnaire, je pense que l'entreprise a renseigné dans la page 3, colonne 1 et 2 les quantités de palettes et leur facturation (données qui ne seront pas reprise car non demandée).\nRemarque pour les fabricants de palettes : \nUne entreprise spécialisée dans la fabrication de pallettes doit déclarer dans \"Production utilisée par l'entreprise\" et non dans \"sciages\".\nIl convient donc de vérifier que l'entreprise produit ou non des palettes via la raison sociale ou leur site internet car leur questionnaire saisi en CAWI peut être \"vert\" mais faux s'ils déclarent le volume et la facturation de palettes en lieu et place de sciages."
+    },
+    {
+      "question": "Que fait-on si l'entreprise a déclaré la totalité de sa production du siège et n'a pas ventilé par établissement ?",
+      "answer": "Il faut leur demander de les ventiler par établissement. Si les établissements sont tous dans le même département, ne pas insiter car cela n'aura aucune conséquence sur les résultats."
+    },
+    {
+      "question": "Que fait-on si l'entreprise n'a pas déclaré de stocks ?",
+      "answer": "Il faut leur demander et s'ils ne répondent pas, il n'y aura aucune estimation."
+    },
+    {
+      "question": "Que fait-on si l'entreprise n'a pas déclaré d'approvisionnement ?",
+      "answer": "Il faut leur demander par téléphone et insister pourqu'ils répondent ou estiment les volumes par type de vendeur. Si réticence car cela représente beaucoup de travail, leur proposer de répondre sans remplir la ventilation (code 116 à 119). \nS'ils ne répondent pas, il n'y aura aucune estimation."
+    },
+    {
+      "question": "aimerai m'assurer de l'éligibilité à l'enquête SRI d'une entreprise de fabrication d'emballages légers en bois (cagettes...).\nCelle-ci m'a indiqué qu'elle achète des grumes de peupliers qui sont découpés en tasseaux de 30 mm dans un premier temps, avant de passer en déroulage (< 6 mm) pour la fabrication des cagettes.\nAu vu des instructions, cette entreprise semble éligible au regard de la première transformation du bois. Pouvez-vous confirmer ?\n\nMais quelle est la différence avec une même entreprise dont les grumes passent directement en déroulage (inf à 6 mm) et qui ne serait alors plus éligible ?",
+      "answer": "Un tasseau est une baguette de bois, dans le cas que tu évoques de 30 mm d'épaisseur.\nLe déroulage est une opération qui consiste à prendre un rondin et le débiter en une fine lamelle (< 6 mm notamment) grâce à une lame.\nDonc on ne peut pas dérouler un tasseau !\nPar contre, on peut trancher un tasseau :\nDonc dans l'exemple que tu cites, je pense qu'il s'agit d'un sciage en tasseau (donc entre dans le champ de SRI) puis d'un tranchage pour la fabrication des lames de cagettes (non enquêtés).\nDonc l'entreprise doit répondre à l'enquête avec volume de tasseaux fabriqués (considérés comme des sciages bruts dans la page 3) mais à priori pas les prix car cette production est utilisée par l'entreprise.\nIl faudra sûrement la mettre dans la colonne \"Production non commercialisée\", \"Quantités utilisées par l'entreprise\"."
+    },
+    {
+      "question": "J'ai eu un appel d'un enquêté qui produit des palettes et des pellets pour le chauffage.\nCette entreprise est-elle dans le champ de l'enquête ?\nSi oui, quelles lignes du questionnaire SRI faut-il renseigner ?",
+      "answer": "si fabrication sans exploitation et sans sciage (achat à 100 % de planche pour fabriquer des palettes et de sciures pour fabriques des pellets) alors hors champ"
+    }
+  ],
+  "SriProd": [
+    {
+      "question": "Onglet SriProduits : généralités",
+      "answer": "Cet onglet permet de renseigner la production de sciages (réalisée par elle ou par un soustraitant) et sa facturation lorsqu'elle est vendue par l'entreprise. Il peut y avoir des variations d'une année sur l'autre mais elle est généralement faible car une scierie doit fonctionner au maximum de sa capacité de production afin de dégager des bénéfices. Cette déclaration se fait par siège avec la somme des établissements le cas échéant. Si l'entreprise réalise uniquement des sciages à façon (sciage réalisé sur des bois dont ils ne sont pas propriétaires), elle est alors prestataire de service. Dans ce cas, elle rempli uniquement la colonne 6 dans l'onglet SriProduit."
+    },
+    {
+      "question": "Sciages réalisés par l'entreprise et vendus (colonne 1 et 2)",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par établissement destinés à être vendus par l'entreprise en colonne 1 (et 2 pour leur valeur)."
+    },
+    {
+      "question": "Sciages réalisés par une autre entreprise et vendus (colonne 3 et 4)",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par d'autres établissements destinés à être vendus par l'entreprise en colonne 3, réalisés en sous traitance (et 4 pour leur valeur)."
+    },
+    {
+      "question": "Sciages réalisés par l'entreprise et destinés à être utilisés par l'entreprise (ou par une autre entreprise du groupe) (colonne 5)",
+      "answer": "L'entreprise doit déclarer tous les volumes sciés par établissement destinés à être transformés par l'entreprise ou par une entreprise du groupe. Elle remplira donc ces volumes dans l'onglet SriProduit en colonne 5. Dans le cas d'un groupe, il faudra considéré que cette production utilisé et vendu par une autre entreprise du groupe soit donc déclarée en valeur uniquement par celle qui vend le produit final (afin d'éviter les double compte). Se rapprocher de la responsable de l'enquête pour plus de précision."
+    },
+    {
+      "question": "Production non commercialisée : sciages à façon (colonne 6)",
+      "answer": "Lorsque l'entreprise réalise une prestation de service pour un tiers, elle déclare les volumes de sciages dans la colonne 6. Ce sont donc des sciages réalisés par l'entreprise à partir de grumes appartenant à une autre entreprise et pour son compte. Seule la prestation est facturée (et n'est pas demandée)."
+    },
+    {
+      "question": "Cas particulier des scieurs commercialisant aussi d'autres produits",
+      "answer": "Attention, seuls les sciages vendus doivent être déclarés. Les sciages revêtent un grand nombre d'appellation. Sont considérés comme des sciages bruts ou rabotés, poncés (non exhaustif) : bastaing, madrier, poutre, chevron, solivette, tasseau, planche, volige, latte et contre-latte, liteau et contre-liteau, bandeau, fermette..."
+    },
+    {
+      "question": "Pin sylvestre (n'existe plus)",
+      "answer": "Attention, depuis 2022, le pin sylvestre n'est plus individualisé dans les sciages. Cette essence se retrouve donc dans la catégorie \"Pins\" (1219 et 1244)."
+    },
+    {
+      "question": "Autres pins (1219 et 1244)",
+      "answer": "Attention, depuis 2022, tous les pins sont à remplir dans cette catégorie. Avant, les pins noir, d'Alep, Laricio étaient déclarés dans \"Autres conifères\"."
+    },
+    {
+      "question": "Autres conifères (1220 et 1245)",
+      "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées. Depuis 2022, cette catégorie n'inclue plus les pins donc cette catégorie doit être inférieure que par le passé."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "Processus de fabrication du merrain ?",
+      "answer": "Après avoir été triés sur le parc à grumes, les chênes de qualité merrain sont tronçonnés en billon d’une longueur d’1,20 m environ à l’entrée de la merranderie.\nChaque billon est ensuite fendu en plusieurs quartiers dans le sens du fil du bois. Cette opération, étape clé en merranderie, garantira l’étanchéité des futures douelles.\nLes quartiers obtenus à l’étape de fente sont sciés dans la longueur toujours dans le sens du fil du bois et selon l’épaisseur souhaitée pour les futures douelles (22, 27, 32 ou 42 mm).\nLes tranches de merrain ainsi obtenues sont délignées afin d’éliminer, d’un côté l’écorce et l’aubier et de l’autre le cœur, pour former une pièce de merrain rectiligne (largeur comprise entre 4 et 12,5 cm pour le corps du fût et mesurant plus de 5 cm pour les pièces de fonds).\nChacune de ces pièces est contrôlée une à une. Les pièces comportant des défauts sont marquées à la craie rouge selon leur type (picots, nœuds, fil coupé, etc.). Le merrain est ensuite « écourté » en fonction des défauts et trié par longueur (corps du tonneau : 110, 105, 95 ou 90 cm – fonds : de 40 à 80 cm – tuiles/bardeaux de chêne : 33 cm).\nPour finir, les pièces de merrains sont empilées en palettes de 0,5 m3, à claire-voie pour favoriser la circulation de l’air durant la période de maturation à l’air libre d’une durée de 24 mois minimum avant d’être utilisées en tonnellerie."
+    },
+    {
+      "question": "Est-ce que les bois sous rails sont des sciages ?",
+      "answer": "Techniquement, ce sont en effet des sciages. Ils sont individualisés uniquement parce qu'Eurostat les a indivicualisés dans les données attendues pour Prodcom."
+    },
+    {
+      "question": "Que fait-on si l'entreprise ne veut pas déclarer ses chiffres d'affaires ou bien à mis une valeur totale inférieure à 5 € par exemple ?",
+      "answer": "Il faut obligatoirement avoir un contact téléphonique pour lui demander. Si elle refuse, ne rien remplir : le SSP se chargera de son estimation si la production de l'entreprise est assez importante. En cas de faible production, aucune estimation ne sera effectuée."
+    },
+    {
+      "question": "Est-ce que les SRISE doivent estimer les données manquantes et notamment les prix à partir des prix moyens ?",
+      "answer": "Par le passé, c'était le cas notamment suite à un refus de l'entreprise de donner les chiffres de la facturation. Depuis 2022, les estimations sont réalisées uniquement par le SSP sur la base des prix moyens de l'année en cours.\nDans ce cas, renseigner le code VALIDSRISE = 6 \"A expertiser par le SSP\" et mettre le code \"ESTIMC\" = 2 pour questionnaire incomplet."
+    },
+    {
+      "question": "Quelle est la différence entre un sciage et un produit fini ?",
+      "answer": "Un sciage est un parallépipède rectangle alors qu'un produit fini a été usiné (arrondi...)."
+    },
+    {
+      "question": "Dans quel cas les entreprises déclarent utiliser leur production (en colonne 5) ?",
+      "answer": "Pour les merrains, l'entreprise peut fabriquer des douelles qui sont les \"planches\" contituant un tonneau.\nPour les bois sous rail, l'entreprise peut les transformer pour des \"objets\" paysager en les usinant.\nPour les sciages, tout type d'usinage afin de fabriquer des lames, parquets, baguettes, plinthes, moulures, panneaux qui sont déclarés dans les autres produits transformés mais aussi d'autres produits comme les palettes, charpentes assemblées..."
+    },
+    {
+      "question": "Que fait-on si la totalité de la production est réalisée avec sous-traitance ?",
+      "answer": "Il faut obligatoirement la rappeler et lui demander explicitement : \"Est-ce que la totalité de votre production vendue a été réalisée par sous traitance ?\". Si la réponse est non, alors leur demanderde corriger leurs données."
+    },
+    {
+      "question": "Un enquêté, dont le code APE est le 1610A, m'envoie un mail me disant qu'il fait uniquement du service à façon.  C'est à dire que ses clients lui apportent leurs grumes. Il les scie en fonction de leur demande et les clients viennent chercher leurs produits.\nEntre-il dans le champ de l'enquête ? Dois-je lui demander de préciser ce qu'il fait des 'produits connexes' ?",
+      "answer": "Le sciage à façon fait bien partie des données enquêtées.\nCette entreprise doit déclarer ses volumes dans le questionnaire \"sciages\" page 3 colonne 6.\nDe plus, elle doit déclarer tous ses connexes."
+    },
+    {
+      "question": "Pour ce qui font que du sciage à façon, ont -ils l'obligation de renseigner les connexes car parfois ils les laisse sur place ?",
+      "answer": "ils ont obligation de renseigner cette partie et si ils sont laissés sur place, ils doivent les mettre dans \"Autres productions\" quand c'est donné ou laissé sur place.\nDonc dans tous les cas, ils doivent le remplir"
+    },
+    {
+      "question": "Pour l'injection ou imprégnation du bois à façon, dans le cas d'un façonnier (codes 5500, 5515, 5535), celui-ci doit répondre à l'enquête, en indiquant le volume produit pour le donneur d'ordre et la facturation du (seul) service d'injection/imprégnation du bois en utilisant les bonnes colonnes, on se demande s'il faut utiliser les colonnes Ventes sans sous-traitance ou Ventes avec sous-traitance, ne vaudrait-il pas mieux griser les cases non concernées (cas impossibles) pour éviter des erreurs de collecte, surtout par internet CAWI ?\nLe vocabulaire 'avec sous-traitance' et 'sans sous-traitance' est ambigu dans ce cas de figure.\nDans ce tableau Autres produits transformés, peut-être vaudrait-il mieux séparer ces trois postes de travail à façon (5500, 5515, 5535) du reste des autres produits transformés pour un faire un tableau à part (il s'agit d'une vente d'une prestation de service et non d'un produit/d'une production) ?",
+      "answer": "Nous avons ajouté un exemple de remplissage dans la notice SRI (cf.notice ci-jointe) qui serait envoyée en même temps que la lettre de lancement aux enquêtés en début de semaine prochaine. Par contre, nous ne pouvons pas intégrer cet exemple dans la notice SRI présente sous CAWI car nous recevons la production CAWI demain.\nConcernant votre remarque de griser les cases non concernées,  nous pouvons avoir le cas d'un sous traitant qui fait également appel à un autre sous traitant.\nL'entreprise A réalise des prestations d'injection ou imprégnation du bois (à façon).\nL'entreprise B confie 100 m3 de bois à l'entreprise A pour imprégnation de poteaux de conifères.\nN'ayant la capacité que d'en imprégner 70 m3, l'entreprise A fait appel à l'entreprise C pour réaliser l'imprégnation de 30 m3.\n\nPar conséquent, concernant notre enquête :\n- l'entreprise A va déclarer en code 5500 :\n    + 70 m3 de quantité réalisée sans sous traitance\n    + 30 m3 de quantité réalisée avec sous traitance\n- l'entreprise B va déclarer en code 5400 : 100 m3 de quantité réalisée avec sous traitance\n- l'entreprise C va déclarer en code 5500 : 30 m3 de quantité réalisée sans sous traitance"
+    },
+    {
+      "question": "Une scierie ne produit que des lattis de conifères (22 mm d'épaisseur) destinés à protéger les jeunes arbres.\nCette production rentre-t-elle dans le champ de l'enquête ?\nSi oui, comment enregistre-t-on cette production ?",
+      "answer": "Oui cette production rentre dans le champ de l'enquête. Les pages 2 et 3 du questionnaire sciage doivent être complétées. Pour la page 3 :  partie sciages bruts, rabotés, poncés."
+    }
+  ],
+  "Autres activités": [
+    {
+      "question": "Onglet SriAutrTransf : généralités",
+      "answer": "La production de ces produits correspond à la vente avec ou sans sous-traitance de bois profilés, Panneaux, Fibre/laine/farine de bois et les bois injectés. Cette déclaration se fait par siège.. Attention aux différentes unités (m2, ml, m3 sciages, m3 ronds et tonne)."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "Nous avons reçu un questionnaire rempli par un imprégnateur de bois. Toutefois, cette personne s'interroge sur l'intérêt de cette enquête qui, selon lui, ne lui renvoie pas d'information sur son métier, ci-dessous le commentaire :\n\"Nous ne sommes pas exploitant forestier ou bien scierie en 2020 ni avant d'ailleurs. Nous achetons des produits dans les scieries qui doivent donc faire leur déclaration.\nNous ne comprenons pas l'intérêt de ce questionnaire qui ne nous renvoie aucune information sur notre métier d'imprégnateur de bois surtout pour la voie ferrée et donc dans l'industrie.\"\nEn sachant qu'il sera sollicité l'année prochaine et les suivantes, serait-il possible de lui préciser le bien fondé du questionnaire ?",
+      "answer": "Notre enquête répond aux demandes de la Commission Européenne concernant l'outil productif. Ces données recueillies par notre ministère pour Eurostat s'appellent des données PRODCOM (production communautaire).\nLes informations concernant l'imprégnation de bois que nous demandons page 4 du questionnaire sont donc essentielles et correspondent bien à l'activité de votre entreprise, à savoir :\n- le volume de bois injectés ou imprégnés (codes de l'enquête 5400, 5415 et 5435) qui vous appartiennent\n- le volume de bois (ne vous appartenant pas) qui vous injectés ou imprégnés en tant que prestataire de service pour une autre entreprise (codes de l'enquête 5500, 5515 et 5535)"
+    },
+    {
+      "question": "Que fait-on si l'entreprise ne veut pas déclarer son chiffre d'affaire par produit après un contact téléphonique ?",
+      "answer": "Ne rien remplir : le SSP se chargera de son estimation."
+    },
+    {
+      "question": "Que fait-on si la totalité de la production est réalisée avec sous-traitance ?",
+      "answer": "Il faut obligatoirement la rappeler et lui demander explicitement : \"Est-ce que la totalité de votre production vendue a été réalisée par sous traitance ?\". Si la réponse est non, alors leur demanderde corriger leurs données."
+    },
+    {
+      "question": "Un enquêté  a renseigné son questionnaire sur Internet en mentionnant :\n\"Nous ne sommes pas une scierie au sens pur du terme. Nous fabriquons du parquet massif, des lames de volets, des lames de bardage, des lames de terrasse, des lames de lambris, à partir d'avivés que nous achetons à des scieries ou des revendeurs. Nous ne sommes pas concernés par cette enquête\"\nJe pense qu'il doit remplir la partie produits transformés, pouvez-vous me confirmer ?",
+      "answer": "Oui il doit répondre à la partie produits transformés."
+    },
+    {
+      "question": "Le Questionnaire xxx a déclaré à notre enquêtrice qu'il avait seulement des billons et qu'il les transformait pour faire des glissières de sécurité.\nOù faut remplir et peut le faire?",
+      "answer": "il convient de s'assurer que l'entreprise a ou non une activité d'exploitant forestier.\nSi oui, les bois sont à déclarer dans \"Autres bois destinés à l'industrie\" feuillus ou conifères selon le cas.\nSi non, alors, il doit remplir l'enquête dans les codes suivants de la page 4 :\n- 5400 correspondant à l'action d'imprégnation ou d'injection des glissières : les glissières étant assimilées à des poteaux\n- éventuellement 5500 s'il imprègne ou injecte des glissières \"à façon\", c'est à dire qu'il le fait pour une autre entreprise sans être donc propriétaire des bois (il est payé pour la prestation)\n- ou rien du tout, s'il ne traite pas les bois"
+    }
+  ],
+  "Connexes": [
+    {
+      "question": "Onglet SriConnexes : généralités",
+      "answer": "La production de sciages (pour son propre compte ou pour des sciages à façon), merrains, bois sous rail et autres produits finis (page 4) génère des connexes qui doivent être déclarés. Il peut y avoir des variations d'une année sur l'autre car les débouchés des connexes sont très variés. Cette déclaration se fait par siège."
+    },
+    {
+      "question": "Produits destinés à la trituration",
+      "answer": "Les connexes sont soit vendus (déclaration volume et valeur) pour être destinés à la trituration (c’est-à-dire la fabrication de pâte à papier ou panneaux de particules), soit donnés gratuitement aussi pour être destinés à la trituration (mettre le volume dans \"Production non commercialisée - Autres Productions\""
+    },
+    {
+      "question": "Produits destinés à d'autres utilisations",
+      "answer": "Les connexes sont soit vendus, soit donnés gratuitement et ne sont pas destinés à la trituration. Chaque cas est détaillé ci-dessous :"
+    },
+    {
+      "question": "Production commercialisée",
+      "answer": "Les connexes qui sont vendus doivent être déclarés en volume et valeur. Si l'entreprise sait que la vocation des ces connexes est la production d'énergie, elle doit alors déclarer ce volume."
+    },
+    {
+      "question": "Production non commercialisée",
+      "answer": "Les connexes qui ne sont pas vendus sont soit :\n- utilisés par l'entreprise pour fabriquer des produits qui seront valorisés (ex : granulés/pellets)\n- utilisés par l'entreprise à des fins de production d'énergie, par ex pour alimenter leur chaufferie. \n- cédés à titre gracieux ou euro symbolique => à classer dans \"Autres productions\"\nDans tous les cas, elle doit déclarer le volume de tous ses connexes. Si elle ne les connais pas précisément, elle doit l'estimer.\nSi elle connait le volume total mais ne sais pas les ventiler entre sciures, écorces, plaquettes alors mettre la totalité dans \"Plaquettes de scieries\" code 1522."
+    },
+    {
+      "question": "Questions",
+      "answer": "Réponses"
+    },
+    {
+      "question": "S'agissant des connexes, ils avaient été exprimés en m3 en 2019 et, avec votre aide, nous les avions convertis en tonnes. \nCette année, SUIVAL nous signale encore une anomalie pour les données des connexes. Avant de téléphoner à la scierie, je souhaitais avoir des précisions sur la façon de remplir les colonnes de ces connexes lorsque la structure fabrique des palettes. \nPourriez-vous me préciser ce que l'entreprise doit prendre en compte, ou ne pas comptabiliser dans les quantités et dans la facturation (paragraphe 6.9 de l'instruction aux enquêteurs) ? \n( Elle a fait des sciages à palettes qui représentent 3 628 m3 d'\"autre sciages de peuplier\"  et 29 500 m3 sur les 35 346 m3 de sciage \"sapin-épicéa autre choix\". \nL'alerte SUIVAL porte sur l'augmentation des quantités des lignes 1480  \"sciures\" et 1530 \"écorces\")",
+      "answer": "Concernant les connexes, votre (excellente) analyse m'amène aux remarques suivantes :\n- dans un contexte de baisse des sciages entre 2019 et 2020, l'augmentation des volumes de connexes est en effet \"suspecte\".\nEn effet, dans l'instruction (§ 6.9) il est dit \"– Ne sont pas concernés les produits connexes :\n- qui n’ont pas été utilisés (vendus, consommés, détruits ou cédés) dans l’année enquêtée\n- générés par la fabrication de produits non concernés par l’enquête ex : tranchage, palettes\nDonc je pense qu'en 2020, l'entreprise a dû déclarer la totalité de ses connexes, y compris ceux issus de la fabrication des palettes...\nCeci pourrait expliquer pourquoi les volumes de 2019 étaient bien inférieurs.\nJe sais que cela doit être difficile pour l'entreprise de distinguer l'origine des connexes : elle fait au mieux..."
+    },
+    {
+      "question": "Que fait-on si l'entreprise ne peut/veut pas déclarer de connexes après un contact téléphonique ?",
+      "answer": "Ne rien remplir : le SSP se chargera de son estimation si la production de l'entreprise est assez importante.\nEn cas de faible production, aucune estimation ne sera effectuée."
+    },
+    {
+      "question": "Que fait-on si l'entreprise donne ses connexes ?",
+      "answer": "Les connexes cédés à titre gracieux ou euro symbolique sont à déclarer en volume (estimation obligatoire) dans \"Autres productions\""
+    },
+    {
+      "question": "Que fait-on si l'entreprise ne veut pas déclarer son chiffre d'affaire par produit après un contact téléphonique ?",
+      "answer": "Ne rien remplir : le SSP se chargera de son estimation."
+    }
+  ],
+  "Controle": [
+    {
+      "question": "Onglet Contrôles (CAPIBARA)",
+      "answer": "Les contrôles premettent de vérifier la cohérence des données déclarées . En cas de contrôle déclanché, il est important de renseigner dans l'onglet Contrôles la Qualification/Commentaires et sur l'onglet concerné justifier par un commentaire si le contrôle est maintenu après la réponse de l'entreprise.\nLes commentaires peuvent être primordiaux pour prendre nos décisions : exclusion de l'enquête, traitement de non-réponse...\nLes autres contrôles les plus importants nécessitent des précisions : ils sont ci-dessous."
+    },
+    {
+      "question": "Toute la production dans Autres Feuillus (270) ou Autres Conifères (370)",
+      "answer": "Même si les volumes sont généralement peu élevés, l'évolution d'une année sur l'autre des résultats départementaux de ces catégories peut être lourdement affectée. Il est impossible pour les services diffusion régionaux et nationaux de pouvoir justifier de fortes évolutions sauf à dire que ce sont des erreurs de saisies ou une volonté de l'enquêté de ne pas ventiler..."
+    },
+    {
+      "question": "Toute entreprise qui a déclaré la totalité de son bois d’œuvre en qualité supérieure uniquement",
+      "answer": "Normalement, un exploitant achète des bois sur pied avec des qualités diverses de bois d'oeuvre. Il trie ensuite les bois par qualité afin de les valoriser lors de la vente. Il est donc rare qu'il n'y ait que de ma meilleure qualité.\nUn des cas de figure correspond aux merrandiers qui sont aussi exploitant. Ils achetent de petits volumes qui sont constitués de qualité supérieure uniquement."
+    },
+    {
+      "question": "Toute entreprise qui n'a pas déclaré de bois certifié",
+      "answer": "En France, la totalité des bois commercialisés par l'ONF est certifiée. Sachant que le volume mis sur le marché par l'ONF représente 40/50 % du national et que les forêts privées ont une proportion non négligeable de forêts certifiées, les gros exploitants devraient déclarer des volumes certifiés. Le seul cas de figure où ils ne peuvent pas déclarer de bois certifié même s'ils en ont acheté, c'est s'il leur entreprise n'est pas certifiée aussi."
+    },
+    {
+      "question": "Toute entreprise qui a déclaré la totalité de ses sciages en autre feuillus (2330) ou autre conifère (3540)",
+      "answer": "Même si les volumes sont généralement peu élevés, l'évolution d'une année sur l'autre des résultats régionaux de ces catégories peut être affectée. Il est impossible pour les services diffusion régionaux et nationaux de pouvoir justifier de fortes évolutions sauf à dire que ce sont des erreurs de saisies ou une volonté de l'enquêté de ne pas ventiler..."
+    }
+  ]
+}
