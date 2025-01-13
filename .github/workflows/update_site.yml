@@ -44,6 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.faq_exf_sri }}
         run: |
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
+          git config --global user.name "Anaël Delorme"
           npx gh-pages -d dist
 
       - name: Notify on success
