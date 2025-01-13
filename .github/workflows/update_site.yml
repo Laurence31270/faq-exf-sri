@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -28,22 +28,21 @@ jobs:
           python .github/scripts/excel_to_json.py
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'  # Active le cache pour les dépendances Node.js
+          cache: 'npm'
 
       - name: Install Node dependencies
-        run: npm ci  # Utilise `npm ci` pour une installation plus rapide et reproductible
+        run: npm ci
 
       - name: Build website
         run: npm run build
 
       - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.faq_exf_sri }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global url.https://${{ secrets.faq_exf_sri }}@github.com/.insteadOf https://github.com/
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
           git config --global user.name "Anaël Delorme"
           npx gh-pages -d dist
