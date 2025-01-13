@@ -3,7 +3,7 @@ name: Update QA Website
 on:
   push:
     paths:
-      - 'data/qa_data.xlsx'  # Le chemin vers votre fichier Excel
+      - 'data/FAQ_EXFSRI_2024.xlsx'  # Le chemin vers votre fichier Excel
     branches:
       - main
 
