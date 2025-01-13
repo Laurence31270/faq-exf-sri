@@ -43,7 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.faq_exf_sri }}
         run: |
-          git config --global user.name "anaelDelorme"
+          git config --global user.name "Anaël Delorme"
           git config --global user.email "anael.delorme@agriculture.gouv.fr"
           npx gh-pages -d dist
 
