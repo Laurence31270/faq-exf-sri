@@ -38,10 +38,15 @@ jobs:
       - name: Build website
         run: npm run build
 
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist 
-          branch: gh-pages
-          token: ${{ secrets.faq_exf_sri }}
+        run: |
+          # Create a temporary branch to deploy
+          git checkout --orphan gh-pages
+          git reset --hard
+          # Move the contents of the dist folder to the root
+          cp -a dist/. .
+          # Add and commit the files to the gh-pages branch
+          git add .
+          git commit -m "Deploy updated site"
+          # Push to the gh-pages branch
+          git push origin gh-pages --force
