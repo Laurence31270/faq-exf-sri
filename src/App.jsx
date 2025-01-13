@@ -49,9 +49,16 @@ const QAWebsite = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/qa_data.json')
-      .then(response => response.json())
+    console.log('Fetching data...');
+    fetch('./qa_data.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(jsonData => {
+        console.log('Data loaded:', jsonData);
         setData(jsonData);
         setLoading(false);
       })
