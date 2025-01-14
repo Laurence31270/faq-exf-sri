@@ -31,10 +31,14 @@ jobs:
       - name: Convert Excel to JSON
         run: |
           python .github/scripts/excel_to_json.py
-          echo "Contenu du dossier public :"
-          ls -la public/
+          echo "Contenu du dossier dist :"
+          ls -la dist/
           echo "Contenu du fichier JSON :"
-          cat public/qa_data.json
+          cat dist/qa_data.json
+          echo "Contenu du dossier ./ :"
+          ls -la ./
+          echo "Contenu du fichier JSON :"
+          cat ./qa_data.json
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

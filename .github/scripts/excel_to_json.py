@@ -29,7 +29,7 @@ def excel_to_json(excel_file):
     os.makedirs('public', exist_ok=True)
     
     # Sauvegarder dans public/
-    with open('public/qa_data.json', 'w', encoding='utf-8') as f:
+    with open('qa_data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     # Aussi sauvegarder dans dist/ si le dossier existe
@@ -42,4 +42,4 @@ def excel_to_json(excel_file):
 if __name__ == "__main__":
     excel_file = "data/FAQ_EXFSRI_2024.xlsx"
     data = excel_to_json(excel_file)
-    print(f"Conversion terminée. Données sauvegardées dans 'public/qa_data.json' et 'dist/qa_data.json'")
+    print(f"Conversion terminée. Données sauvegardées dans 'qa_data.json' et 'dist/qa_data.json'")
