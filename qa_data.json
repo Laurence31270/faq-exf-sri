@@ -73,10 +73,6 @@
       "answer": "Toutes les entreprises transformant du bois produisent des connxes qui doivent être déclarés même s'ils ne sont pas vendu ou s'il sont stockés."
     },
     {
-      "question": "Questions",
-      "answer": "Réponses"
-    },
-    {
       "question": "Question d'un expert forestier :\nDe nombreux propriétaires privés m'ont confié la gestion de leur patrimoine forestier depuis plusieurs années. Certains, sont en Groupement Forestier et m'ont informé du courrier que vous leur avez envoyé et cité en objet.\nJe souhaiterai connaitre les critères retenus pour ces envois car tous mes clients en Groupement Forestier ne reçoivent pas systématiquement ce courrier.\nDe plus, à quoi correspond il au juste ? J'ai bien peur que ce courrier ne soit généralement pas adapté aux Groupements Forestiers mais plutôt aux exploitants forestiers et scieurs.\nJe vous remercie donc de m'éclairer dans la mesure du possible sur ce sujet.",
       "answer": "C'est un expert forestier et non une entreprise \"classique\".\nCependant, il est à même de rentrer dans le champ de l'enquête : il faut dans ce cas, comme tout autre qui \"sort\" de l'ordinaire, rappeler simplement les conditions d'entrée dans le champ de l'enquête mais en les contextualisant aux experts forestiers.\nAvant de donner des éléments de réponse, je précise ce que peuvent réaliser les experts pour les GF :\n- proposer des coupes de bois\n- regrouper les coupes de différents propriétaires (dont des GF) afin de créer des lots\n- organiser une vente de bois\nEt c'est à ce moment qu'ils entrent dans le champ ou non de l'enquête selon qu'ils vendent le bois sur pied (Hors Champ) ou bord de route après avoir fait appel à un prestataire de service pour la coupe de bois (réponse à EXF attendue).\n\nDonc il faut expliquer cela à cet expert et lui dire aussi que sa réponse est faite en lieu et place d'un groupement forestier dont il est le gestionnaire.\nPar conséquent, par exemple, s'il gère 10 GF mais que la coupe vendu bord de route ne concerne que 3 GF, alors il doit ventiler les bois de cette coupe dans les 3 déclarations par GF. Enfin, si ces GF vendent en plus du bois sur pied, bien évidemment, celui-ci ne devra pas être déclaré dans EXF."
     }
@@ -89,10 +85,6 @@
     {
       "question": "MAJC :",
       "answer": "Code 4 : Une entreprise \"Temporairement inactive\" est généralement un groupement forestier qui n'a pas effectué de coupe vendue bord de route l'année enquêtée. Si une groupement forestier n'a pas l'intention d'effectuer de coupe dans les 5 prochaines années, il conviendra de le déclarer à la chargée d'enquête EXF-SRI afin qu'elle le mette dans un tableau spécial. De ce fait, cette unité ne sera pas enquêté les 4 prochaines années et donc sortira de l'échantillon. Il convient donc de poser la question pour toute les unités déclarant ne pas avoir fait de coupe.\nCode 6 : Une entreprise classée en \"Hors champ\" est obligatoirement une entreprise qui à l'avenir ne répondra jamais aux critères de définition de l'enquête. Si elle peut y répondre dans les 5 années à venir, elle doit alors être mise en \"Temporairement inactive\"."
-    },
-    {
-      "question": "Questions",
-      "answer": "Réponses"
     },
     {
       "question": "Une enquêtrice me demande quel code mettre pour une entreprise qui a cessée en juin 2023 et qu'un repreneur a poursuite en juillet 2023.\nSi on met le code 7, toutes les données qui vont de janvier 2023 à juin 2023 ne seront pas prises en compte.",
@@ -327,10 +319,6 @@
       "answer": "Les entreprises déclarent leur approvisionnement afin que nous puissions avoir des informations sur le volume de grume utilisé. Notons que dans CAPIBARA la saisie des volumes de la recolte des exploitants-scieurs autoconsommée est renseignées automatiquement à partir de l'onglet \"Recolte9K99\" de EXF. C'est le seul contrôle de cohérence entre EXF et SRI.\nLes stocks permettent de calculer le rendement matière de la scierie au travers de la formule : Production / (approvisionnement + variation de stock)."
     },
     {
-      "question": "Questions",
-      "answer": "Réponses"
-    },
-    {
       "question": "Le SERFOB m'interroge sur la disponibilité de données d'approvisionnement géographique en grumes des scieries, cette donnée est demandé dans le questionnaire \nMais il semble que dans les cubes ADEL, cette information ne soit pas reprise dans un cube SRI, y compris un cube statisticien.\nhttps://agreste.agriculture.gouv.fr/agreste-web/disaron/SCINR06/detail/\nPouvez-vous me confirmer ce point ?",
       "answer": "je vous confirme que cette donnée selon la provenance géographique des bois ne fait en effet l'objet d'aucune publication, ni papier, ni dans un cube.\nLe cube SCINR06 donne les volumes acheté ou exploités par région siège de la scierie.\nIl faut la traiter au niveau des données individuelles présentes dans Cerise dans le fichier APPROV_STOCK.csv (en pj pour 2019).\nPar contre, il faut croiser ce tableau avec un autre pour avoir les données géographiques du siège de la scierie.\nCependant, ces données doivent être analysées avec attention (d'où la non publication) car :\n- elles ne sont pas exhaustives car non obligatoire : si l'entreprise ne le remplit pas, elle a juste un remarque mais peut quand même valider son questionnaire\n- elles sont déclarées au niveau du siège pour la somme de tous les établissement, or dans une quinzaine de cas, des entreprises ont des établissements non localisés dans la même région que le siège d'où dans ces cas, l'impossibilité d'affecter géographiquement ces données\n- pour les % (code 116 à 119), on sait que leur approvisionnement vient d'exploitant forestier d'un \"autre département\" ou d'une \"autre région\" du siège de l'exploitant en question qui leur a vendu le bois. Or cela ne donne aucune information sur la provenance exacte des bois => en effet, un exploitant peut avoir son siège dans un département mais exploiter tout ou partie de son bois dans un autre.\nDonc la seule information très précise concerne les scieries qui sont aussi des exploitants forestiers car elles remplissent le questionnaire EXF (code 111 ci dessous) et donc nous avons la provenance exacte avec le département où à eu lieu la récolte et les volumes associés."
     },
@@ -397,10 +385,6 @@
       "answer": "Attention, uniquement si les essences d'arbres ne se retrouvent pas dans les autres essences déjà citées. Depuis 2022, cette catégorie n'inclue plus les pins donc cette catégorie doit être inférieure que par le passé."
     },
     {
-      "question": "Questions",
-      "answer": "Réponses"
-    },
-    {
       "question": "Processus de fabrication du merrain ?",
       "answer": "Après avoir été triés sur le parc à grumes, les chênes de qualité merrain sont tronçonnés en billon d’une longueur d’1,20 m environ à l’entrée de la merranderie.\nChaque billon est ensuite fendu en plusieurs quartiers dans le sens du fil du bois. Cette opération, étape clé en merranderie, garantira l’étanchéité des futures douelles.\nLes quartiers obtenus à l’étape de fente sont sciés dans la longueur toujours dans le sens du fil du bois et selon l’épaisseur souhaitée pour les futures douelles (22, 27, 32 ou 42 mm).\nLes tranches de merrain ainsi obtenues sont délignées afin d’éliminer, d’un côté l’écorce et l’aubier et de l’autre le cœur, pour former une pièce de merrain rectiligne (largeur comprise entre 4 et 12,5 cm pour le corps du fût et mesurant plus de 5 cm pour les pièces de fonds).\nChacune de ces pièces est contrôlée une à une. Les pièces comportant des défauts sont marquées à la craie rouge selon leur type (picots, nœuds, fil coupé, etc.). Le merrain est ensuite « écourté » en fonction des défauts et trié par longueur (corps du tonneau : 110, 105, 95 ou 90 cm – fonds : de 40 à 80 cm – tuiles/bardeaux de chêne : 33 cm).\nPour finir, les pièces de merrains sont empilées en palettes de 0,5 m3, à claire-voie pour favoriser la circulation de l’air durant la période de maturation à l’air libre d’une durée de 24 mois minimum avant d’être utilisées en tonnellerie."
     },
@@ -451,10 +435,6 @@
       "answer": "La production de ces produits correspond à la vente avec ou sans sous-traitance de bois profilés, Panneaux, Fibre/laine/farine de bois et les bois injectés. Cette déclaration se fait par siège.. Attention aux différentes unités (m2, ml, m3 sciages, m3 ronds et tonne)."
     },
     {
-      "question": "Questions",
-      "answer": "Réponses"
-    },
-    {
       "question": "Nous avons reçu un questionnaire rempli par un imprégnateur de bois. Toutefois, cette personne s'interroge sur l'intérêt de cette enquête qui, selon lui, ne lui renvoie pas d'information sur son métier, ci-dessous le commentaire :\n\"Nous ne sommes pas exploitant forestier ou bien scierie en 2020 ni avant d'ailleurs. Nous achetons des produits dans les scieries qui doivent donc faire leur déclaration.\nNous ne comprenons pas l'intérêt de ce questionnaire qui ne nous renvoie aucune information sur notre métier d'imprégnateur de bois surtout pour la voie ferrée et donc dans l'industrie.\"\nEn sachant qu'il sera sollicité l'année prochaine et les suivantes, serait-il possible de lui préciser le bien fondé du questionnaire ?",
       "answer": "Notre enquête répond aux demandes de la Commission Européenne concernant l'outil productif. Ces données recueillies par notre ministère pour Eurostat s'appellent des données PRODCOM (production communautaire).\nLes informations concernant l'imprégnation de bois que nous demandons page 4 du questionnaire sont donc essentielles et correspondent bien à l'activité de votre entreprise, à savoir :\n- le volume de bois injectés ou imprégnés (codes de l'enquête 5400, 5415 et 5435) qui vous appartiennent\n- le volume de bois (ne vous appartenant pas) qui vous injectés ou imprégnés en tant que prestataire de service pour une autre entreprise (codes de l'enquête 5500, 5515 et 5535)"
     },
@@ -495,10 +475,6 @@
     {
       "question": "Production non commercialisée",
       "answer": "Les connexes qui ne sont pas vendus sont soit :\n- utilisés par l'entreprise pour fabriquer des produits qui seront valorisés (ex : granulés/pellets)\n- utilisés par l'entreprise à des fins de production d'énergie, par ex pour alimenter leur chaufferie. \n- cédés à titre gracieux ou euro symbolique => à classer dans \"Autres productions\"\nDans tous les cas, elle doit déclarer le volume de tous ses connexes. Si elle ne les connais pas précisément, elle doit l'estimer.\nSi elle connait le volume total mais ne sais pas les ventiler entre sciures, écorces, plaquettes alors mettre la totalité dans \"Plaquettes de scieries\" code 1522."
-    },
-    {
-      "question": "Questions",
-      "answer": "Réponses"
     },
     {
       "question": "S'agissant des connexes, ils avaient été exprimés en m3 en 2019 et, avec votre aide, nous les avions convertis en tonnes. \nCette année, SUIVAL nous signale encore une anomalie pour les données des connexes. Avant de téléphoner à la scierie, je souhaitais avoir des précisions sur la façon de remplir les colonnes de ces connexes lorsque la structure fabrique des palettes. \nPourriez-vous me préciser ce que l'entreprise doit prendre en compte, ou ne pas comptabiliser dans les quantités et dans la facturation (paragraphe 6.9 de l'instruction aux enquêteurs) ? \n( Elle a fait des sciages à palettes qui représentent 3 628 m3 d'\"autre sciages de peuplier\"  et 29 500 m3 sur les 35 346 m3 de sciage \"sapin-épicéa autre choix\". \nL'alerte SUIVAL porte sur l'augmentation des quantités des lignes 1480  \"sciures\" et 1530 \"écorces\")",
