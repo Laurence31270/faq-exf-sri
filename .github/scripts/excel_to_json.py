@@ -28,14 +28,9 @@ def excel_to_json(excel_file):
     # Créer le dossier public s'il n'existe pas
     os.makedirs('public', exist_ok=True)
     
-    # Sauvegarder dans public/
+    # Sauvegarder
     with open('qa_data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    # Aussi sauvegarder dans dist/ si le dossier existe
-    if os.path.exists('dist'):
-        with open('dist/qa_data.json', 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
     
     return data
 
