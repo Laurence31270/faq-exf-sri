@@ -1,6 +1,10 @@
 {
   "Univers": [
     {
+      "question": "Ma question",
+      "answer": "Ma réponse"
+    },
+    {
       "question": "Objectifs de l'enquête",
       "answer": "Pour la récolte, disposer du volume total de bois commercialisé en France en recherchant l'exhaustivité et en évitant les double-comptes. \nPour les sciages, bois sous rails, merrains et produits finis, il s'agit de recueillir les données obligatoire pour l'Eurostat sur la Production Commercialisés par la France en recherchant l'exhaustivité et en évitant les double-comptes."
     },
@@ -75,6 +79,12 @@
     {
       "question": "Question d'un expert forestier :\nDe nombreux propriétaires privés m'ont confié la gestion de leur patrimoine forestier depuis plusieurs années. Certains, sont en Groupement Forestier et m'ont informé du courrier que vous leur avez envoyé et cité en objet.\nJe souhaiterai connaitre les critères retenus pour ces envois car tous mes clients en Groupement Forestier ne reçoivent pas systématiquement ce courrier.\nDe plus, à quoi correspond il au juste ? J'ai bien peur que ce courrier ne soit généralement pas adapté aux Groupements Forestiers mais plutôt aux exploitants forestiers et scieurs.\nJe vous remercie donc de m'éclairer dans la mesure du possible sur ce sujet.",
       "answer": "C'est un expert forestier et non une entreprise \"classique\".\nCependant, il est à même de rentrer dans le champ de l'enquête : il faut dans ce cas, comme tout autre qui \"sort\" de l'ordinaire, rappeler simplement les conditions d'entrée dans le champ de l'enquête mais en les contextualisant aux experts forestiers.\nAvant de donner des éléments de réponse, je précise ce que peuvent réaliser les experts pour les GF :\n- proposer des coupes de bois\n- regrouper les coupes de différents propriétaires (dont des GF) afin de créer des lots\n- organiser une vente de bois\nEt c'est à ce moment qu'ils entrent dans le champ ou non de l'enquête selon qu'ils vendent le bois sur pied (Hors Champ) ou bord de route après avoir fait appel à un prestataire de service pour la coupe de bois (réponse à EXF attendue).\n\nDonc il faut expliquer cela à cet expert et lui dire aussi que sa réponse est faite en lieu et place d'un groupement forestier dont il est le gestionnaire.\nPar conséquent, par exemple, s'il gère 10 GF mais que la coupe vendu bord de route ne concerne que 3 GF, alors il doit ventiler les bois de cette coupe dans les 3 déclarations par GF. Enfin, si ces GF vendent en plus du bois sur pied, bien évidemment, celui-ci ne devra pas être déclaré dans EXF."
+    }
+  ],
+  "Nouveau truc": [
+    {
+      "question": "Biduel",
+      "answer": "machin"
     }
   ],
   "Codification": [
