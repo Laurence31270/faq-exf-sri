@@ -50,7 +50,7 @@ const QAWebsite = () => {
 
   useEffect(() => {
     console.log('Fetching data...');
-    fetch('./qa_data.json')
+    fetch(`${process.env.PUBLIC_URL}/qa_data.json`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
