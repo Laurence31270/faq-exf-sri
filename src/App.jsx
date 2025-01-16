@@ -1,65 +1,147 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  AppBar,
-  Tabs,
-  Tab,
-  Box,
-  Typography,
-  Paper,
-  InputAdornment,
-  TextField,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  CircularProgress,
+import {
+  Card,
+  CardContent,
   Container,
-  Divider
+  Grid,
+  Typography,
+  Box,
+  Collapse,
+  TextField,
+  InputAdornment,
+  CardHeader,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  IconButton,
+  AppBar,
+  Toolbar,
+  Drawer,
+  Button
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import ClearIcon from '@mui/icons-material/Clear';
+import {
+  MenuBook as BookIcon,
+  Description as FileIcon,
+  Settings as SettingsIcon,
+  People as UsersIcon,
+  Security as ShieldIcon,
+  Storage as DatabaseIcon,
+  Code as CodeIcon,
+  Archive as BoxIcon,
+  Email as MailIcon,
+  Phone as PhoneIcon,
+  QuestionAnswer as QuestionIcon
+} from '@mui/icons-material';
+
+// Couleurs pastel harmonieuses
+const THEME_COLORS = [
+  '#F0C5E6', // Rose pastel
+  '#CDF0C5', // Vert pastel
+  '#8BAFD6', // Bleu pastel
+  '#99D68B', // Vert clair
+  '#D6C58B', // Beige
+  '#C5D6F0', // Bleu clair
+  '#F0D6C5', // Pêche
+  '#D68BA4', // Rose saumon
+  '#8BD6D6', // Turquoise
+  '#BAB8F0'  // Lavande
+];
 
 // Styles personnalisés
-const StyledAccordion = styled(Accordion)(({ theme }) => ({
-  margin: theme.spacing(1, 0),
-  boxShadow: theme.shadows[2],
-  '&:before': {
-    display: 'none',
-  },
-  '&.Mui-expanded': {
-    margin: theme.spacing(1, 0),
+const StyledCard = styled(Card)(({ theme, index, isExpanded }) => ({
+  height: '100%',
+  cursor: 'pointer',
+  transition: 'all 0.3s ease-in-out',
+  backgroundColor: isExpanded ? 'transparent' : THEME_COLORS[index % THEME_COLORS.length],
+  position: isExpanded ? 'fixed' : 'relative',
+  top: isExpanded ? '0' : 'auto',
+  left: isExpanded ? '0' : 'auto',
+  right: isExpanded ? '0' : 'auto',
+  bottom: isExpanded ? '0' : 'auto',
+  zIndex: isExpanded ? 1300 : 1,
+  width: isExpanded ? '100%' : 'auto',
+  height: isExpanded ? '100vh' : '100%',
+  overflow: 'auto',
+  '&:hover': {
+    transform: isExpanded ? 'none' : 'translateY(-4px)',
+    boxShadow: theme.shadows[4],
   },
 }));
 
-const StyledAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
-  backgroundColor: theme.palette.grey[50],
-  '&.Mui-expanded': {
-    minHeight: 48,
+const CloseButton = styled(IconButton)(({ theme }) => ({
+  position: 'absolute',
+  right: theme.spacing(2),
+  top: theme.spacing(2),
+  zIndex: 1400,
+  backgroundColor: 'rgba(255, 255, 255, 0.9)',
+  '&:hover': {
+    backgroundColor: 'rgba(255, 255, 255, 1)',
   },
 }));
 
-const StyledDivider = styled(Divider)(({ theme }) => ({
-  margin: theme.spacing(2, 0),
+const StyledListItem = styled(ListItem)(({ theme, depth = 0 }) => ({
+  paddingLeft: theme.spacing(2 * (depth + 1)),
+  '&:hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.04)',
+  },
 }));
 
 const QAWebsite = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedTheme, setSelectedTheme] = useState(null);
+  const [selectedSubtheme, setSelectedSubtheme] = useState(null);
+  const [expandedQuestions, setExpandedQuestions] = useState({});
+  const [expandedCard, setExpandedCard] = useState(null);
+  const [showMenu, setShowMenu] = useState(false);
+
+  // Liste d'icônes disponibles
+  const availableIcons = [
+    BookIcon, FileIcon, SettingsIcon, UsersIcon, ShieldIcon,
+    DatabaseIcon, CodeIcon, BoxIcon, MailIcon, PhoneIcon
+  ];
+
+  const getRandomIcon = () => {
+    const randomIndex = Math.floor(Math.random() * availableIcons.length);
+    const IconComponent = availableIcons[randomIndex];
+    return <IconComponent />;
+  };
 
   useEffect(() => {
-    console.log('Fetching data...');
-    fetch(`./qa_data.json`)
+    fetch('./qa_data.json')
       .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         return response.json();
       })
       .then(jsonData => {
-        console.log('Data loaded:', jsonData);
-        setData(jsonData);
+        const processedData = Object.entries(jsonData).reduce((acc, [theme, themeData]) => {
+          acc[theme] = Object.entries(themeData).reduce((subAcc, [subtheme, subthemeData]) => {
+            const subthemeName = Object.keys(subthemeData).length === 0 && Object.keys(themeData).length > 1 ? "Autres" : subtheme;
+            if (subthemeName !== "Autres" || Object.keys(themeData).length === 1) {
+              subAcc[subthemeName] = Object.entries(subthemeData).reduce((chapAcc, [chapter, questions]) => {
+                if (questions.length === 0) {
+                  chapAcc[chapter] = [{ question: "Divers", answer: "" }];
+                } else {
+                  chapAcc[chapter] = questions;
+                }
+                return chapAcc;
+              }, {});
+            }
+            return subAcc;
+          }, {});
+          return acc;
+        }, {});
+        
+        setData(processedData);
         setLoading(false);
       })
       .catch(error => {
@@ -68,10 +150,37 @@ const QAWebsite = () => {
       });
   }, []);
 
-  const themes = Object.keys(data);
+  useEffect(() => {
+    if (expandedCard) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [expandedCard]);
 
-  const handleTabChange = (event, newValue) => {
-    setActiveTab(newValue);
+  const handleCardExpand = (theme) => {
+    if (expandedCard === theme) {
+      setExpandedCard(null);
+      setSelectedTheme(null);
+      setSelectedSubtheme(null);
+    } else {
+      setExpandedCard(theme);
+      setSelectedTheme(theme);
+    }
+  };
+
+  const toggleQuestion = (questionId) => {
+    setExpandedQuestions(prev => ({
+      ...prev,
+      [questionId]: !prev[questionId]
+    }));
+  };
+
+  const handleSubthemeClick = (subtheme) => {
+    setSelectedSubtheme(subtheme === selectedSubtheme ? null : subtheme);
   };
 
   const filterQuestions = (questions = []) => {
@@ -83,73 +192,145 @@ const QAWebsite = () => {
     });
   };
 
-  // Obtenir toutes les questions filtrées pour la recherche
-  const getAllFilteredQuestions = () => {
-    return themes.flatMap(theme => 
-      filterQuestions(data[theme]).map(qa => ({
-        ...qa,
-        theme
-      }))
-    );
+  const renderSearchResults = () => {
+    const results = [];
+    Object.entries(data).forEach(([theme, themeData]) => {
+      const themeResults = [];
+      let hasResults = false;
+      
+      Object.entries(themeData).forEach(([subtheme, subthemeData]) => {
+        const subthemeResults = [];
+        
+        Object.entries(subthemeData).forEach(([chapter, questions]) => {
+          const filteredQuestions = filterQuestions(questions);
+          if (filteredQuestions.length > 0) {
+            hasResults = true;
+            subthemeResults.push(
+              <Box key={chapter} sx={{ ml: 4, mb: 2 }}>
+                {chapter !== "Sans chapitre" && (
+                  <Typography variant="h6" color="primary" sx={{ mb: 1 }}>
+                    {chapter}
+                  </Typography>
+                )}
+                <List>
+                  {filteredQuestions.map((qa, index) => {
+                    const questionId = `${theme}-${subtheme}-${chapter}-${index}`;
+                    return (
+                      <StyledListItem 
+                        key={questionId}
+                        button
+                        onClick={() => toggleQuestion(questionId)}
+                      >
+                        <ListItemIcon>
+                          <QuestionIcon color="primary" />
+                        </ListItemIcon>
+                        <ListItemText
+                          primary={qa.question}
+                          secondary={
+                            <Collapse in={expandedQuestions[questionId]}>
+                              <Typography
+                                variant="body2"
+                                color="text.secondary"
+                                sx={{ mt: 1 }}
+                              >
+                                {qa.answer}
+                              </Typography>
+                            </Collapse>
+                          }
+                        />
+                        {expandedQuestions[questionId] ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                      </StyledListItem>
+                    );
+                  })}
+                </List>
+              </Box>
+            );
+          }
+        });
+        
+        if (subthemeResults.length > 0) {
+          themeResults.push(
+            <Box key={subtheme} sx={{ ml: 2, mb: 3 }}>
+              <Typography variant="h5" sx={{ mb: 2, color: 'text.primary' }}>
+                {subtheme}
+              </Typography>
+              {subthemeResults}
+            </Box>
+          );
+        }
+      });
+      
+      if (hasResults) {
+        results.push(
+          <Card 
+            key={theme} 
+            sx={{ 
+              mb: 4, 
+              p: 2,
+              backgroundColor: 'white',
+              border: `2px solid ${THEME_COLORS[Object.keys(data).indexOf(theme) % THEME_COLORS.length]}`,
+            }}
+          >
+            <Typography 
+              variant="h4" 
+              sx={{ 
+                mb: 3,
+                color: THEME_COLORS[Object.keys(data).indexOf(theme) % THEME_COLORS.length],
+              }}
+            >
+              {theme}
+            </Typography>
+            {themeResults}
+          </Card>
+        );
+      }
+    });
+    
+    return results;
   };
 
   if (loading) {
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-        <CircularProgress />
+        <div style={{
+          width: '48px',
+          height: '48px',
+          border: '4px solid #f3f3f3',
+          borderTop: '4px solid #3498db',
+          borderRadius: '50%',
+          animation: 'spin 1s linear infinite',
+        }} />
       </Box>
     );
   }
 
-  const renderQuestionsList = (questions, showTheme = false) => {
-    return questions.map((qa, index) => (
-      <Box key={index}>
-        <StyledAccordion>
-          <StyledAccordionSummary 
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls={`panel${index}-content`}
-            id={`panel${index}-header`}
-          >
-            <Typography variant="subtitle1" component="h2">
-              {qa.question}
-            </Typography>
-          </StyledAccordionSummary>
-          <AccordionDetails>
-            <Typography 
-              variant="h6" 
-              component="h3" 
-              gutterBottom 
-              color="primary"
-            >
-              {qa.question}
-            </Typography>
-            <Typography paragraph>
-              {qa.answer}
-            </Typography>
-            {showTheme && (
-              <Typography variant="caption" color="text.secondary">
-                Catégorie : {qa.theme}
-              </Typography>
-            )}
-          </AccordionDetails>
-        </StyledAccordion>
-      </Box>
-    ));
-  };
-
   return (
-    <Container maxWidth="lg">
-      <Box sx={{ py: 4 }}>
-        <Typography variant="h3" component="h1" align="center" gutterBottom color="primary">
-          Foire Aux Questions - EXF-SRI
-        </Typography>
-
-        {/* Barre de recherche */}
-        <Paper elevation={2} sx={{ p: 2, mb: 4 }}>
+    <Box sx={{ overflowY: 'auto', height: '100vh' }}>
+      {/* Bandeau fixe en haut */}
+      <AppBar position="fixed" sx={{ zIndex: 1400 }}>
+        <Toolbar>
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography 
+            variant="h6" 
+            sx={{ flexGrow: 1, cursor: 'pointer' }}
+            onClick={() => {
+              setExpandedCard(null);
+              setSelectedTheme(null);
+              setSelectedSubtheme(null);
+            }}
+          >
+            Foire Aux Questions - EXF-SRI
+          </Typography>
           <TextField
-            fullWidth
             variant="outlined"
             placeholder="Rechercher une question..."
+            value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             InputProps={{
               startAdornment: (
@@ -157,56 +338,225 @@ const QAWebsite = () => {
                   <SearchIcon />
                 </InputAdornment>
               ),
+              endAdornment: searchTerm && (
+                <InputAdornment position="end">
+                  <IconButton onClick={() => setSearchTerm('')}>
+                    <ClearIcon />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
+            sx={{ 
+              width: '300px',
+              backgroundColor: 'white',
+              borderRadius: '4px',
+              marginLeft: '16px',
             }}
           />
-        </Paper>
+        </Toolbar>
+      </AppBar>
 
+      {/* Menu des thèmes */}
+      <Drawer
+        anchor="left"
+        open={showMenu}
+        onClose={() => setShowMenu(false)}
+        sx={{ zIndex: 1300 }}
+      >
+        <Box sx={{ width: 250, p: 2 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Thèmes
+          </Typography>
+          <List>
+            {Object.keys(data).map((theme, index) => (
+              <ListItem
+                button
+                key={theme}
+                onClick={() => {
+                  handleCardExpand(theme);
+                  setShowMenu(false);
+                }}
+                sx={{
+                  backgroundColor: expandedCard === theme ? THEME_COLORS[index % THEME_COLORS.length] : 'transparent',
+                  '&:hover': {
+                    backgroundColor: THEME_COLORS[index % THEME_COLORS.length],
+                  },
+                }}
+              >
+                <ListItemText primary={theme} />
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </Drawer>
+
+      {/* Contenu principal */}
+      <Container maxWidth="lg" sx={{ py: 4, mt: 8 }}>
         {searchTerm ? (
-          // Résultats de recherche
           <Box sx={{ mt: 2 }}>
-            <Typography variant="h5" gutterBottom>
+            <Typography variant="h5" gutterBottom color="primary">
               Résultats de recherche
             </Typography>
-            {renderQuestionsList(getAllFilteredQuestions(), true)}
+            {renderSearchResults()}
           </Box>
         ) : (
-          // Navigation par onglets
-          <Box sx={{ width: '100%' }}>
-            <Paper elevation={3} sx={{ mb: 3 }}>
-              <AppBar position="static" color="default" elevation={0}>
-                <Tabs
-                  value={activeTab}
-                  onChange={handleTabChange}
-                  indicatorColor="primary"
-                  textColor="primary"
-                  variant="scrollable"
-                  scrollButtons="auto"
+          <Box>
+            {expandedCard ? (
+              <Box sx={{ mt: 2 }}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    color: THEME_COLORS[Object.keys(data).indexOf(expandedCard) % THEME_COLORS.length],
+                    mb: 3,
+                  }}
                 >
-                  {themes.map((theme) => (
-                    <Tab key={theme} label={theme} />
-                  ))}
-                </Tabs>
-              </AppBar>
-            </Paper>
-
-            {themes.map((theme, index) => (
-              <Box
-                key={theme}
-                role="tabpanel"
-                hidden={activeTab !== index}
-                sx={{ mt: 2 }}
-              >
-                {activeTab === index && (
-                  <Box>
-                    {renderQuestionsList(filterQuestions(data[theme]))}
+                  {expandedCard}
+                </Typography>
+                {Object.keys(data[expandedCard]).map((subtheme) => (
+                  <Box key={subtheme} sx={{ mb: 4 }}>
+                    {Object.keys(data[expandedCard][subtheme]).length === 0 ? (
+                      <List>
+                        {data[expandedCard][subtheme].map((qa, index) => {
+                          const questionId = `${expandedCard}-${subtheme}-${index}`;
+                          return (
+                            <StyledListItem
+                              key={questionId}
+                              button
+                              onClick={() => toggleQuestion(questionId)}
+                            >
+                              <ListItemIcon>
+                                <QuestionIcon color="primary" />
+                              </ListItemIcon>
+                              <ListItemText
+                                primary={qa.question}
+                                secondary={
+                                  <Collapse in={expandedQuestions[questionId]}>
+                                    <Typography
+                                      variant="body2"
+                                      color="text.secondary"
+                                      sx={{ mt: 1 }}
+                                    >
+                                      {qa.answer}
+                                    </Typography>
+                                  </Collapse>
+                                }
+                              />
+                              {expandedQuestions[questionId] ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                            </StyledListItem>
+                          );
+                        })}
+                      </List>
+                    ) : (
+                      <>
+                        <Typography 
+                          variant="h5" 
+                          sx={{ 
+                            mb: 2, 
+                            color: 'text.primary',
+                            cursor: 'pointer',
+                            '&:hover': { opacity: 0.8 }
+                          }}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleSubthemeClick(subtheme);
+                          }}
+                        >
+                          {subtheme}
+                        </Typography>
+                        <Collapse in={selectedSubtheme === subtheme}>
+                          {Object.entries(data[expandedCard][subtheme]).map(([chapter, questions]) => (
+                            <Box key={chapter} sx={{ ml: 2, mb: 3 }}>
+                              {chapter !== "Sans chapitre" && (
+                                <Typography 
+                                  variant="h6" 
+                                  color="primary" 
+                                  sx={{ 
+                                    mb: 1,
+                                    cursor: 'pointer',
+                                    '&:hover': { opacity: 0.8 }
+                                  }}
+                                >
+                                  {chapter}
+                                </Typography>
+                              )}
+                              <List>
+                                {questions.map((qa, index) => {
+                                  const questionId = `${expandedCard}-${subtheme}-${chapter}-${index}`;
+                                  return (
+                                    <StyledListItem
+                                      key={questionId}
+                                      button
+                                      onClick={() => toggleQuestion(questionId)}
+                                    >
+                                      <ListItemIcon>
+                                        <QuestionIcon color="primary" />
+                                      </ListItemIcon>
+                                      <ListItemText
+                                        primary={qa.question}
+                                        secondary={
+                                          <Collapse in={expandedQuestions[questionId]}>
+                                            <Typography
+                                              variant="body2"
+                                              color="text.secondary"
+                                              sx={{ mt: 1 }}
+                                            >
+                                              {qa.answer}
+                                            </Typography>
+                                          </Collapse>
+                                        }
+                                      />
+                                      {expandedQuestions[questionId] ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                                    </StyledListItem>
+                                  );
+                                })}
+                              </List>
+                            </Box>
+                          ))}
+                        </Collapse>
+                      </>
+                    )}
                   </Box>
-                )}
+                ))}
               </Box>
-            ))}
+            ) : (
+              <Grid container spacing={3}>
+                {Object.keys(data).map((theme, index) => (
+                  <Grid 
+                    item 
+                    xs={12} 
+                    sm={6} 
+                    md={4} 
+                    key={theme}
+                    sx={{ position: 'relative' }}
+                  >
+                    <StyledCard 
+                      onClick={() => handleCardExpand(theme)}
+                      index={index}
+                      isExpanded={expandedCard === theme}
+                    >
+                      <CardHeader
+                        avatar={getRandomIcon()}
+                        title={
+                          <Typography 
+                            variant="h6"
+                            sx={{ 
+                              color: 'rgba(0, 0, 0, 0.87)',
+                              transition: 'all 0.3s ease'
+                            }}
+                          >
+                            {theme}
+                          </Typography>
+                        }
+                      />
+                    </StyledCard>
+                  </Grid>
+                ))}
+              </Grid>
+            )}
           </Box>
         )}
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 
