@@ -231,7 +231,7 @@ const QAWebsite = () => {
                               <Typography
                                 variant="body2"
                                 color="text.secondary"
-                                sx={{ mt: 1 }}
+                                sx={{ mt: 1, fontSize: '1.2rem'}}
                               >
                                 {qa.answer}
                               </Typography>
@@ -434,7 +434,7 @@ const QAWebsite = () => {
                                     <Typography
                                       variant="body2"
                                       color="text.secondary"
-                                      sx={{ mt: 1 }}
+                                      sx={{ mt: 1, fontSize: '1.2rem'}}
                                     >
                                       {qa.answer}
                                     </Typography>
@@ -498,7 +498,7 @@ const QAWebsite = () => {
                                             <Typography
                                               variant="body2"
                                               color="text.secondary"
-                                              sx={{ mt: 1 }}
+                                              sx={{ mt: 1, fontSize: '1.2rem' }}
                                             >
                                               {qa.answer}
                                             </Typography>
