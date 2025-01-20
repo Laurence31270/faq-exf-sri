@@ -36,7 +36,8 @@ import {
   Warehouse as WarehouseIcon, // pour STOCKS ET APROVISIONNEMENT
   Security as PoliceIcon, // pour CONTRÖLES
   Code as CodeIcon,      // pour CODIFICATION
-  QuestionAnswer as QuestionIcon
+  QuestionAnswer as QuestionIcon,
+  Signpost as SignpostIcon
 
 } from '@mui/icons-material';
 
@@ -123,7 +124,7 @@ const QAWebsite = () => {
       return <TrashIcon />;
     }
     if (themeLower.includes('transform')) {
-      return <SignsIcon />;
+      return <SignpostIcon />;
     }
     if (themeLower.includes('stock') || themeLower.includes('appro')|| themeLower.includes('prod')) {
       return <WarehouseIcon />;

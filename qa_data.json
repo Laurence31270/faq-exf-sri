@@ -1,5 +1,5 @@
 {
-  "Univers": {
+  "UNIVERS": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
@@ -85,32 +85,6 @@
         {
           "question": "Question d'un expert forestier :De nombreux propriétaires privés m'ont confié la gestion de leur patrimoine forestier depuis plusieurs années. Certains, sont en Groupement Forestier et m'ont informé du courrier que vous leur avez envoyé et cité en objet.\nJe souhaiterai connaitre les critères retenus pour ces envois car tous mes clients en Groupement Forestier ne reçoivent pas systématiquement ce courrier.\nDe plus, à quoi correspond il au juste ? J'ai bien peur que ce courrier ne soit généralement pas adapté aux Groupements Forestiers mais plutôt aux exploitants forestiers et scieurs.\nJe vous remercie donc de m'éclairer dans la mesure du possible sur ce sujet.",
           "answer": "C'est un expert forestier et non une entreprise \"classique\".\nCependant, il est à même de rentrer dans le champ de l'enquête : il faut dans ce cas, comme tout autre qui \"sort\" de l'ordinaire, rappeler simplement les conditions d'entrée dans le champ de l'enquête mais en les contextualisant aux experts forestiers.\nAvant de donner des éléments de réponse, je précise ce que peuvent réaliser les experts pour les GF :\n- proposer des coupes de bois\n- regrouper les coupes de différents propriétaires (dont des GF) afin de créer des lots\n- organiser une vente de bois\nEt c'est à ce moment qu'ils entrent dans le champ ou non de l'enquête selon qu'ils vendent le bois sur pied (Hors Champ) ou bord de route après avoir fait appel à un prestataire de service pour la coupe de bois (réponse à EXF attendue).\n\nDonc il faut expliquer cela à cet expert et lui dire aussi que sa réponse est faite en lieu et place d'un groupement forestier dont il est le gestionnaire.\nPar conséquent, par exemple, s'il gère 10 GF mais que la coupe vendu bord de route ne concerne que 3 GF, alors il doit ventiler les bois de cette coupe dans les 3 déclarations par GF. Enfin, si ces GF vendent en plus du bois sur pied, bien évidemment, celui-ci ne devra pas être déclaré dans EXF."
-        }
-      ]
-    }
-  },
-  "Codification": {
-    "Sans sous-thème": {
-      "Sans chapitre": [
-        {
-          "question": "ACCEPT :",
-          "answer": "Ne pas confondre les point 2 et 3 : lorsqu'on a eu au moins un contact avec la personne puis plus rien, il ne faut pas le mettre en \"injoignable\" mais en \"refuse de répondre\" ."
-        },
-        {
-          "question": "MAJC :",
-          "answer": "Code 4 : Une entreprise \"Temporairement inactive\" est généralement un groupement forestier qui n'a pas effectué de coupe vendue bord de route l'année enquêtée. Si une groupement forestier n'a pas l'intention d'effectuer de coupe dans les 5 prochaines années, il conviendra de le déclarer à la chargée d'enquête EXF-SRI afin qu'elle le mette dans un tableau spécial. De ce fait, cette unité ne sera pas enquêté les 4 prochaines années et donc sortira de l'échantillon. Il convient donc de poser la question pour toute les unités déclarant ne pas avoir fait de coupe.\nCode 6 : Une entreprise classée en \"Hors champ\" est obligatoirement une entreprise qui à l'avenir ne répondra jamais aux critères de définition de l'enquête. Si elle peut y répondre dans les 5 années à venir, elle doit alors être mise en \"Temporairement inactive\"."
-        },
-        {
-          "question": "Questions",
-          "answer": "Réponses"
-        },
-        {
-          "question": "Une enquêtrice me demande quel code mettre pour une entreprise qui a cessée en juin 2023 et qu'un repreneur a poursuite en juillet 2023.\nSi on met le code 7, toutes les données qui vont de janvier 2023 à juin 2023 ne seront pas prises en compte.",
-          "answer": "On n'avait pas pensé à ce type de cas. Il faudra qu'on revoit pour l'année prochaine les modalités de la variable MAJC.\nTu peux codifier cette unité en code 2- active en 2023 avec cessation réalisée en 2024 en mettant en commentaire que cette unité à été reprise en juillet 2023 par la société xxx."
-        },
-        {
-          "question": "Quand tu dis qu'en fin de campagne, pour chaque questionnaire collecté, le code VALIDSRISE prendra la modalité 5-NPAI ou 7- CAPI validé, ceux qui ont, par exemple le code 6-À expertiser par le SSP tout en ayant fait le choix \"questionnaire incomplet\" dans ce même onglet, finiront par soit 5 ou 7 ou pourront-ils conserver cette validation ?.",
-          "answer": "En fin de campagne, pour chaque questionnaires collecté le code VALIDSRISE prendra la modalité 5-NPAI, 6-A expertiser par le SSP ou 7-CAPI validé."
         }
       ]
     }
@@ -319,7 +293,7 @@
       ]
     }
   },
-  "Sciages_Approv": {
+  "STOCKS ET APPROV": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
@@ -413,7 +387,7 @@
       ]
     }
   },
-  "SriProd": {
+  "SCIAGES": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
@@ -507,7 +481,7 @@
       ]
     }
   },
-  "Autres activités": {
+  "AUTRES PRODUITS TRANSFORMES": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
@@ -545,7 +519,7 @@
       ]
     }
   },
-  "Connexes": {
+  "CONNEXES": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
@@ -595,7 +569,7 @@
       ]
     }
   },
-  "Controle": {
+  "CONTROLES": {
     "Sans sous-thème": {
       "Sans chapitre": [
         {
