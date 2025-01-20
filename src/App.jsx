@@ -45,7 +45,7 @@ import {
 
 // Couleurs pastel harmonieuses
 const THEME_COLORS = [
-  '#F0C5E6', // Rose pastel
+  '#F0C5E9', // Rose pastel
   '#CDF0C5', // Vert pastel
   '#8BAFD6', // Bleu pastel
   '#99D68B', // Vert clair
