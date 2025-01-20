@@ -28,18 +28,19 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import ClearIcon from '@mui/icons-material/Clear';
 import {
-  MenuBook as BookIcon,
-  Description as FileIcon,
-  Settings as SettingsIcon,
-  People as UsersIcon,
-  Security as ShieldIcon,
-  Storage as DatabaseIcon,
-  Code as CodeIcon,
-  Archive as BoxIcon,
-  Email as MailIcon,
-  Phone as PhoneIcon,
+  Public as GlobeIcon,  // pour UNIVERS
+  Forest as TreeIcon,   // pour RECOLTE
+  ContentCut as SawIcon, // pour SCIAGES
+  Delete as TrashIcon,  // pour PRODUITS CONNEXES
+  Dashboard as PanelIcon, // pour AUTRES PRODUITS TRANSFORMÉS (remplace SignPost)
+  Warehouse as WarehouseIcon, // pour STOCKS ET APROVISIONNEMENT
+  Security as PoliceIcon, // pour CONTRÖLES
+  Code as CodeIcon,      // pour CODIFICATION
   QuestionAnswer as QuestionIcon
+
 } from '@mui/icons-material';
+
+
 
 // Couleurs pastel harmonieuses
 const THEME_COLORS = [
@@ -104,16 +105,38 @@ const QAWebsite = () => {
   const [expandedCard, setExpandedCard] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
 
-  // Liste d'icônes disponibles
-  const availableIcons = [
-    BookIcon, FileIcon, SettingsIcon, UsersIcon, ShieldIcon,
-    DatabaseIcon, CodeIcon, BoxIcon, MailIcon, PhoneIcon
-  ];
 
-  const getRandomIcon = () => {
-    const randomIndex = Math.floor(Math.random() * availableIcons.length);
-    const IconComponent = availableIcons[randomIndex];
-    return <IconComponent />;
+  // Fonction pour déterminer l'icône en fonction du nom du thème
+  const getThemeIcon = (theme) => {
+    const themeLower = theme.toLowerCase();
+    
+    if (themeLower.includes('univers')) {
+      return <GlobeIcon />;
+    }
+    if (themeLower.includes('recolt')) {
+      return <TreeIcon />;
+    }
+    if (themeLower.includes('sciage')) {
+      return <SawIcon />;
+    }
+    if (themeLower.includes('connexe')) {
+      return <TrashIcon />;
+    }
+    if (themeLower.includes('transform')) {
+      return <SignsIcon />;
+    }
+    if (themeLower.includes('stock') || themeLower.includes('appro')|| themeLower.includes('prod')) {
+      return <WarehouseIcon />;
+    }
+    if (themeLower.includes('control') || themeLower.includes('contrôl')) {
+      return <PoliceIcon />;
+    }
+    if (themeLower.includes('codif') || themeLower.includes('variable')) {
+      return <CodeIcon />;
+    }
+    
+    // Icône par défaut si aucune correspondance n'est trouvée
+    return <QuestionIcon />;
   };
 
   useEffect(() => {
@@ -535,19 +558,19 @@ const QAWebsite = () => {
                       isExpanded={expandedCard === theme}
                     >
                       <CardHeader
-                        avatar={getRandomIcon()}
-                        title={
-                          <Typography 
-                            variant="h6"
-                            sx={{ 
-                              color: 'rgba(0, 0, 0, 0.87)',
-                              transition: 'all 0.3s ease'
-                            }}
-                          >
-                            {theme}
-                          </Typography>
-                        }
-                      />
+                          avatar={getThemeIcon(theme)}
+                          title={
+                            <Typography 
+                              variant="h6"
+                              sx={{ 
+                                color: 'rgba(0, 0, 0, 0.87)',
+                                transition: 'all 0.3s ease'
+                              }}
+                            >
+                              {theme}
+                            </Typography>
+                          }
+                        />
                     </StyledCard>
                   </Grid>
                 ))}
