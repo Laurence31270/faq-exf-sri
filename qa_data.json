@@ -285,6 +285,16 @@
       ]
     }
   },
+  "TEST": {
+    "Sans sous-thème": {
+      "Sans chapitre": [
+        {
+          "question": "Onglet SriSciage : généralités",
+          "answer": "La production de sciages correspond à la SOMME de 3 catégories distinctes précisées dans les 3 lignes suivantes.Il peut y avoir des variations d'une année sur l'autre mais elle est généralement faible car une scierie doit fonctionner au maximum de sa capacité de production afin de dégager des bénéfices. Cette déclaration se fait par établissement. Si l'entreprise réalise uniquement des sciages à façon (sciage réalisé sur des bois dont ils ne sont pas propriétaires), elle est alors prestataire de service. Dans ce cas, elle rempli uniquement la colonne 6 dans l'onglet SriProduit."
+        }
+      ]
+    }
+  },
   "STOCKS ET APPROV": {
     "Sans sous-thème": {
       "Sans chapitre": [
